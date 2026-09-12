@@ -1,0 +1,16 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="114.286" height="114.286" viewBox="0 0 114.286 114.286" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="carbon:test-tool">
+<path id="Vector" d="M82.1434 32.8571L72.8577 23.5714L67.8577 28.5714L82.1434 42.8571L107.143 17.8571L102.143 12.8571L82.1434 32.8571ZM42.8577 19.2856L37.8577 14.2856L28.572 23.5714L19.2863 14.2856L14.2863 19.2856L23.572 28.5714L14.2863 37.8571L19.2863 42.8571L28.572 33.5714L37.8577 42.8571L42.8577 37.8571L33.572 28.5714L42.8577 19.2856ZM42.8577 76.4285L37.8577 71.4285L28.572 80.7142L19.2863 71.4285L14.2863 76.4285L23.572 85.7142L14.2863 94.9999L19.2863 99.9999L28.572 90.7142L37.8577 99.9999L42.8577 94.9999L33.572 85.7142L42.8577 76.4285Z" fill="url(#paint0_linear_0_4)"/>
+<path id="Vector_2" d="M60.7148 53.5714V7.14279H53.572V53.5714H7.14341V60.7142H53.572V107.143H60.7148V60.7142H107.143V53.5714H60.7148Z" fill="url(#paint1_linear_0_4)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_4" x1="38.4659" y1="-53.5058" x2="120.168" y2="68.3273" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F8D74B"/>
+<stop offset="1" stop-color="#FC5215"/>
+</linearGradient>
+<linearGradient id="paint1_linear_0_4" x1="33.183" y1="-69.0113" x2="129.059" y2="65.1597" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F8D74B"/>
+<stop offset="1" stop-color="#FC5215"/>
+</linearGradient>
+</defs>
+</svg>

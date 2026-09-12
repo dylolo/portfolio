@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BTC Change — Étude de cas · Khady Lo</title>
+<meta name="description" content="Refonte de la plateforme de gestion de change BTC Change : audit UX de 80 écrans, design system et refonte UI des workflows.">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Reem+Kufi:wght@400;500;600;700&family=Sen:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .case--btc { --accent-cs: #0260a7; --hero-bg: #ebf2f7; --hero-fg: #337ab2; --chip-bg: #337ab2; }
+  .case--btc .case__title { font-weight: 400; }
+  .case--btc .case__hero-device { width: 80.6%; }
+</style>
+</head>
+<body class="case case--btc">
+
+<header class="site-header site-header--light">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="Khady Lo — accueil">
+      <svg viewBox="0 0 41.4332 35.0043" fill="currentColor" aria-hidden="true"><path d="M5.70837 16.1443C5.70837 17.9171 5.70837 19.5391 5.70837 21.0856C5.70837 22.6321 5.70837 24.5936 5.70837 26.2155C5.70837 29.6481 5.70837 32.5902 5.70837 35.0043H0.0756076C0.113411 30.1762 0.151215 24.405 0.151215 17.6908C0.151215 10.9767 0.151215 11.6556 0.0756076 7.99677C0.0756076 5.35637 0.0378038 2.71596 0 0.0378418H5.82178C5.82178 2.82912 5.78398 5.88445 5.74618 9.16609C5.74618 11.6933 5.74618 14.032 5.74618 16.182L5.70837 16.1443Z"/><path d="M28.7312 26.5926C31.4152 29.0444 34.4773 31.8357 37.9553 35.0042H29.9787C27.7861 32.9673 25.5934 30.9681 23.4764 29.0067C18.1461 24.2163 15.1218 21.4627 14.3657 20.7837V20.6329C15.8401 19.1618 19.0156 15.8801 23.8923 10.8634C27.3324 7.31769 30.7726 3.69656 34.1749 0H41.4332C37.6528 3.62112 33.7969 7.50629 29.8275 11.5423C25.48 15.9933 22.7582 18.7846 21.6619 19.9162V20.0293C22.2289 20.5574 24.5727 22.7452 28.769 26.5549L28.7312 26.5926Z"/><path d="M14.9327 27.347C17.39 29.6102 20.1875 32.1375 23.2874 34.9665H15.3108C13.3828 33.1936 11.4926 31.4585 9.64021 29.7611C8.12806 28.4032 6.80493 27.2339 5.67082 26.1777C2.75993 23.575 1.05876 22.0285 0.491699 21.5381V21.3873C1.4746 20.4065 3.17577 18.6337 5.67082 16.1065C6.91834 14.824 8.39269 13.3152 10.0183 11.6178C13.7608 7.80805 17.4278 3.9606 21.0948 0H28.4665C24.4215 3.84744 20.3009 7.99665 16.0291 12.3345C11.6816 16.7854 8.95975 19.5767 7.82563 20.7083V20.8215C8.39269 21.3495 10.7365 23.5373 14.9327 27.347Z"/></svg>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html#philosophie">Philosophie &amp; Valeurs</a>
+      <a href="index.html#projets">Projets</a>
+      <a href="index.html#competences">Compétences</a>
+    </nav>
+    <a class="btn-contact" href="mailto:khadylolo200@gmail.com">Contact</a>
+    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main>
+  <div class="case-header-space"></div>
+
+  <div class="container">
+    <div class="case__meta">
+      <div>
+        <p class="case__meta-label case__meta-label--lg">Projet</p>
+        <h1 class="case__title">Platforme de gestion de change</h1>
+      </div>
+      <div class="case__facts">
+        <div class="case__fact"><p class="case__meta-label">Client</p><p>BTC</p></div>
+        <div class="case__fact"><p class="case__meta-label">Mon rôle</p><p>Product Designer</p></div>
+        <div class="case__fact"><p class="case__meta-label">Durée</p><p>4 semaines</p></div>
+      </div>
+    </div>
+
+    <div class="case__hero">
+      <div class="case__hero-card">
+        <div class="case__hero-head">
+          <img class="case__hero-logo" src="assets/btc/logo-btc.png" alt="Logo Bathi Trading Cargo" width="88" height="87">
+          <p class="case__hero-title">Platforme de gestion de change</p>
+          <div class="chips"><span class="chip">Audit</span><span class="chip">Design system</span><span class="chip">UI</span></div>
+        </div>
+        <div class="case__hero-device"><img src="assets/btc/hero-imac.png" alt="Tableau de bord BTC Change sur un iMac" width="1006" height="754"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content case__body">
+    <section class="reveal">
+      <h2 class="cs-h3">01 - Contexte</h2>
+      <p class="cs-text">BTC Change est une plateforme métier dédiée à la gestion des opérations de change et des flux financiers. La plateforme centralise plusieurs workflows opérationnels : gestion des wallets, transactions de change, ouverture et fermeture des journées, achats fournisseurs, conversions de devises, gestion des tiers, paiement des dettes et suivi des tâches. L’objectif du projet était d’améliorer l’expérience des opérateurs en rendant la plateforme plus claire, cohérente, efficace et sécurisée.</p>
+    </section>
+
+    <section class="reveal">
+      <h2 class="cs-h3">02 - Le challenge</h2>
+      <p class="cs-text">Le défi était de simplifier l’expérience des agents tout en conservant la profondeur des opérations financières. Je devais notamment :</p>
+      <ul class="cs-list">
+        <li>Clarifier les informations essentielles pour faciliter les décisions quotidiennes.</li>
+        <li>Simplifier les workflows sans supprimer les étapes métier nécessaires.</li>
+        <li>Structurer les interactions pour rendre les opérations financières plus prévisibles.</li>
+        <li>Créer une expérience cohérente à travers les différents modules de la plateforme.</li>
+        <li>Poser des bases réutilisables pour faciliter l’évolution future du produit.</li>
+      </ul>
+    </section>
+
+    <section class="reveal">
+      <h2 class="cs-h3">03 - Design Process</h2>
+      <p class="cs-text">J'ai abordé le projet en 3 étapes :</p>
+      <div class="process-chips" data-stagger>
+        <div class="process-chip">Audit UX</div>
+        <div class="process-chip">Design System</div>
+        <div class="process-chip">Refonte UI des workflows</div>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <h2 class="cs-h3">Audit UX</h2>
+      <p class="cs-text">J'ai réalisé un audit UX de la plateforme afin d'identifier les principaux points de friction à travers les workflows opérationnels. L'analyse s'est basée sur les 10 principes heuristiques de Nielsen, complétée par un audit visuel.</p>
+      <div class="stat-row" data-stagger>
+        <div class="stat"><b>80</b><span>écrans analysés</span></div>
+        <div class="stat"><b>71</b><span>frictions détectées</span></div>
+        <div class="stat"><b>5</b><span>problèmes majeurs issus de la synthèse</span></div>
+      </div>
+      <div class="table-wrap">
+        <table class="audit-table">
+          <thead><tr><th>Problème</th><th>Ce que cela provoquait</th></tr></thead>
+          <tbody>
+            <tr><td>Incohérence des composants</td><td>Un même pattern pouvait avoir plusieurs comportements visuels</td></tr>
+            <tr><td>CTA multi-couleurs</td><td>Hiérarchie des actions difficile à comprendre</td></tr>
+            <tr><td>Steppers inconsistants</td><td>3 versions différentes d'un même composant</td></tr>
+            <tr><td>Densité informationnelle</td><td>Lecture difficile des listes et opérations</td></tr>
+            <tr><td>Manque de feedback &amp; guardrails</td><td>États ambigus et risque d'erreur sur les actions sensibles</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <h2 class="cs-h4">From audit to action</h2>
+      <p class="cs-text">J'ai donc orienté le redesign autour de 4 priorités :</p>
+      <div class="priorities" data-stagger>
+        <div class="priority"><b>01 — Clarifier</b><p>Réduire la densité et améliorer la hiérarchie de l'information.</p></div>
+        <div class="priority"><b>02 — Standardiser</b><p>Créer des composants et patterns réutilisables.</p></div>
+        <div class="priority"><b>03 — Simplifier</b><p>Repenser les workflows et les interactions complexes.</p></div>
+        <div class="priority"><b>04 — Sécuriser</b><p>Ajouter davantage de contexte, de validation et de garde-fous aux opérations sensibles.</p></div>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <h2 class="cs-h3">03 - Design system</h2>
+      <p class="cs-text">J’ai conçu un Design System BTC Change pour structurer les fondations visuelles et fonctionnelles du produit. Pour accélérer la conception et explorer les différentes variantes, j’ai utilisé Claude AI comme assistant de design.</p>
+      <h3 class="cs-h4" style="margin-top:48px">3.1 Fondation</h3>
+      <figure class="figure figure--shadow"><img src="assets/btc/ds-fondation.png" alt="Palette de couleurs : couleurs de marque et sémantiques du design system" loading="lazy"></figure>
+      <h3 class="cs-h4" style="margin-top:56px">3.2 Typographie</h3>
+      <figure class="figure figure--shadow"><img src="assets/btc/ds-typographie.png" alt="Familles de polices Plus Jakarta Sans et Inter et échelle typographique" loading="lazy"></figure>
+      <h3 class="cs-h4" style="margin-top:56px">3.3 Spacing et Grid</h3>
+      <figure class="figure figure--shadow"><img src="assets/btc/ds-spacing.png" alt="Échelle d’espacement base 4px" loading="lazy"></figure>
+      <h3 class="cs-h4" style="margin-top:56px">3.4 Composants</h3>
+      <figure class="figure figure--shadow"><img src="assets/btc/ds-composants.png" alt="Boutons, hiérarchie des variantes et badges de statut" loading="lazy"></figure>
+    </section>
+
+    <section class="reveal">
+      <h2 class="cs-h3">4 - Refonte UI des workflows</h2>
+
+      <h3 class="cs-h4" style="margin-top:34px">4.1 Le Dashboard</h3>
+      <div class="compare">
+        <div class="compare__row">
+          <div class="compare__note"><b>Avant</b><p>Le Dashboard souffrait principalement d'une mauvaise hiérarchie :</p><ul><li>actions rapides très visibles ;</li><li>plusieurs couleurs concurrentes ;</li><li>cartes de soldes avec gradients ;</li><li>métriques à zéro sans contexte.</li></ul></div>
+          <div class="compare__img"><img src="assets/btc/dashboard-avant.png" alt="Ancien tableau de bord" loading="lazy"></div>
+        </div>
+        <div class="compare__row compare__row--reverse">
+          <div class="compare__img"><img src="assets/btc/dashboard-apres.png" alt="Nouveau tableau de bord" loading="lazy"></div>
+          <div class="compare__note"><b>Après</b><p>Le Dashboard a été restructuré autour de la situation opérationnelle de l’agent.</p><ul><li>Hiérarchisation de l’information : situation financière, activité et actions principales mieux structurées.</li><li>Vue opérationnelle par pays : statut, transactions et volumes accessibles en un coup d’œil.</li><li>Actions rapides rationalisées : les principales opérations sont directement accessibles depuis le solde.</li></ul></div>
+        </div>
+      </div>
+
+      <h3 class="cs-h4" style="margin-top:64px">4.2 Transactions</h3>
+      <div class="compare">
+        <div class="compare__row">
+          <div class="compare__note"><b>Avant</b><p>L'audit relevait :</p><ul><li>7 filtres sur une seule ligne ;</li><li>recherche ;</li><li>trop d'informations par transaction ;</li><li>plusieurs CTA de même importance ;</li><li>types d'opérations mélangés ;</li><li>identifiants trop longs ;</li><li>panneau de détail compressant la liste.</li></ul></div>
+          <div class="compare__img"><img src="assets/btc/transactions-avant.png" alt="Ancienne page Transactions" loading="lazy"></div>
+        </div>
+        <div class="compare__row compare__row--reverse">
+          <div class="compare__img"><img src="assets/btc/transactions-apres.png" alt="Nouvelle page Transactions" loading="lazy"></div>
+          <div class="compare__note"><b>Après</b><ul><li>Réduction de la densité : table recentrée sur les informations essentielles.</li><li>Filtres restructurés : recherche, filtre et période mieux organisés.</li><li>Statuts et compteurs clarifiés : Total, En attente, Validées, Annulées pour suivre rapidement l’activité.</li></ul></div>
+        </div>
+      </div>
+
+      <h3 class="cs-h4" style="margin-top:64px">4.3 Mes Wallets</h3>
+      <div class="compare">
+        <div class="compare__row">
+          <div class="compare__note"><b>Avant</b><p>La page Wallets présentait plusieurs problèmes structurels :</p><ul><li>Cartes wallet peu lisibles : contraste insuffisant.</li><li>Actions sans hiérarchie claire : « Ajouter un wallet », « Transférer » et « Apport capital » avaient des traitements visuels différents sans logique commune.</li></ul></div>
+          <div class="compare__img"><img src="assets/btc/wallets-avant.png" alt="Ancienne page Mes wallets" loading="lazy"></div>
+        </div>
+        <div class="compare__row compare__row--reverse">
+          <div class="compare__img"><img src="assets/btc/wallets-apres.png" alt="Nouvelle page Mes wallets" loading="lazy"></div>
+          <div class="compare__note"><b>Après</b><p>La nouvelle page restructure l’expérience autour de la gestion et de la lecture des wallets.</p><ul><li>Les cartes ont été redesignées avec une structure plus lisible.</li><li>Les actions sont regroupées dans une zone dédiée en haut de page.</li></ul></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="container more">
+    <h2 class="more__title reveal">Plus de projets</h2>
+    <div class="more__grid" data-stagger>
+      <a class="card card--wikilo" href="projet-wikilo.html" aria-label="Wikilo — application mobile de transport de colis">
+        <img class="card__logo card__logo--sm" src="assets/wikilo/logo-wikilo.png" alt="">
+        <div class="card__media"><img src="assets/wikilo/hero-iphones.png" alt=""></div>
+        <span class="card__cta">Voir l’étude de cas →</span>
+      </a>
+      <a class="card card--mcn" href="projet-mcn.html" aria-label="Website MCN — Musée des Civilisations Noires">
+        <img class="card__logo card__logo--sm" src="assets/mcn/logo-mcn.png" alt="">
+        <p class="card__title">Website MCN</p>
+        <div class="card__media"><img src="assets/mcn/hero-site.png" alt=""></div>
+        <span class="card__cta">Voir l’étude de cas →</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p class="site-footer__name">Khady Lo</p>
+  <div class="site-footer__links">
+    <a href="https://www.linkedin.com/in/khady-lo-b90313228/" target="_blank" rel="noopener">Linkedin</a>
+    <a href="https://dribbble.com/khadylo" target="_blank" rel="noopener">Dribbble</a>
+    <a href="mailto:khadylolo200@gmail.com">Email</a>
+  </div>
+  <p class="site-footer__meta">© 2026 Khady Lo — Product Designer, Dakar</p>
+</footer>
+
+<button class="to-top" type="button" aria-label="Revenir en haut"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 15.8V4.2"/><path d="M4.2 10 10 4.2 15.8 10"/></svg></button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

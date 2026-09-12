@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BetSet — Étude de cas UX · Khady Lo</title>
+<meta name="description" content="BetSet, application de santé mentale pour les jeunes au Sénégal : design sprint, recherche quantitative, personas, wireframes, UI kit et conception haute fidélité.">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Reem+Kufi:wght@400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .case--betset .case__meta { font-family: var(--font-kufi); }
+  .case--betset .case__hero-card { aspect-ratio: 2496 / 1408; background: #fff; box-shadow: 0 30px 80px rgba(252, 82, 21, .12); }
+</style>
+</head>
+<body class="case case--betset">
+
+<header class="site-header site-header--light">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="Khady Lo — accueil">
+      <svg viewBox="0 0 41.4332 35.0043" fill="currentColor" aria-hidden="true"><path d="M5.70837 16.1443C5.70837 17.9171 5.70837 19.5391 5.70837 21.0856C5.70837 22.6321 5.70837 24.5936 5.70837 26.2155C5.70837 29.6481 5.70837 32.5902 5.70837 35.0043H0.0756076C0.113411 30.1762 0.151215 24.405 0.151215 17.6908C0.151215 10.9767 0.151215 11.6556 0.0756076 7.99677C0.0756076 5.35637 0.0378038 2.71596 0 0.0378418H5.82178C5.82178 2.82912 5.78398 5.88445 5.74618 9.16609C5.74618 11.6933 5.74618 14.032 5.74618 16.182L5.70837 16.1443Z"/><path d="M28.7312 26.5926C31.4152 29.0444 34.4773 31.8357 37.9553 35.0042H29.9787C27.7861 32.9673 25.5934 30.9681 23.4764 29.0067C18.1461 24.2163 15.1218 21.4627 14.3657 20.7837V20.6329C15.8401 19.1618 19.0156 15.8801 23.8923 10.8634C27.3324 7.31769 30.7726 3.69656 34.1749 0H41.4332C37.6528 3.62112 33.7969 7.50629 29.8275 11.5423C25.48 15.9933 22.7582 18.7846 21.6619 19.9162V20.0293C22.2289 20.5574 24.5727 22.7452 28.769 26.5549L28.7312 26.5926Z"/><path d="M14.9327 27.347C17.39 29.6102 20.1875 32.1375 23.2874 34.9665H15.3108C13.3828 33.1936 11.4926 31.4585 9.64021 29.7611C8.12806 28.4032 6.80493 27.2339 5.67082 26.1777C2.75993 23.575 1.05876 22.0285 0.491699 21.5381V21.3873C1.4746 20.4065 3.17577 18.6337 5.67082 16.1065C6.91834 14.824 8.39269 13.3152 10.0183 11.6178C13.7608 7.80805 17.4278 3.9606 21.0948 0H28.4665C24.4215 3.84744 20.3009 7.99665 16.0291 12.3345C11.6816 16.7854 8.95975 19.5767 7.82563 20.7083V20.8215C8.39269 21.3495 10.7365 23.5373 14.9327 27.347Z"/></svg>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html#philosophie">Philosophie &amp; Valeurs</a>
+      <a href="index.html#projets">Projets</a>
+      <a href="index.html#competences">Compétences</a>
+    </nav>
+    <a class="btn-contact" href="mailto:khadylolo200@gmail.com">Contact</a>
+    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main>
+  <div class="case-header-space"></div>
+
+  <div class="container">
+    <div class="case__meta">
+      <div>
+        <p class="case__meta-label case__meta-label--lg">Projet</p>
+        <h1 class="case__title">BetSet</h1>
+      </div>
+      <div class="case__facts">
+        <div class="case__fact"><p class="case__meta-label">Réalisé par</p><p>Khady Lo</p></div>
+        <div class="case__fact"><p class="case__meta-label">Mon rôle</p><p>UX Designer</p></div>
+        <div class="case__fact"><p class="case__meta-label">Durée</p><p>7 jours</p></div>
+      </div>
+    </div>
+
+    <div class="case__hero">
+      <div class="case__hero-card">
+        <img class="full" src="assets/betset/hero.png" alt="BetSet Santé Mental App — étude de cas UX par Khady Lo : tableau de bord desktop et version mobile" width="1248" height="704">
+      </div>
+    </div>
+  </div>
+
+  <div class="content case__body" style="width:min(1110px, 100% - 2*var(--gutter))">
+    <section class="reveal bs-box"><i></i>
+      <h2 class="bs-h2">Problem Statement</h2>
+      <p class="bs-text">« Je ressens parfois le poids de la société, des attentes et du quotidien, au point de me sentir au bord de la dépression. J’aimerais avoir une application qui m’aide à traverser ces moments difficiles, à mieux comprendre ce que je ressens et à retrouver un équilibre mental. »</p>
+    </section>
+
+    <section class="reveal bs-context">
+      <img src="assets/betset/context-emojis.png" alt="Émojis d’humeurs en orbite autour d’un visage souriant" width="382" height="382" data-parallax="24">
+      <div>
+        <h2 class="bs-h2">Context</h2>
+        <p class="bs-text">Au Sénégal, de nombreux jeunes font face à une intensification des pressions sociales, académiques et professionnelles.
+Une augmentation notable de la détresse psychologique est observée, alimentée par l’absence de dispositifs de prévention, d’outils adaptés à leurs réalités, et d’un accompagnement personnalisé.
+Ce projet vise à créer une application version desktop et mobile simple et bienveillante pour les aider à mieux gérer leur santé mentale.</p>
+      </div>
+    </section>
+
+    <section class="reveal bs-box"><i></i>
+      <h2 class="bs-h2">Design Sprint Processus</h2>
+      <p class="bs-text">« Le design sprint est une méthode permettant de designer un produit et/ou service en un temps court (5 jours) et ce, de manière organisée. La limite du temps et l’organisation précise des tâches permettent d’aboutir rapidement à un résultat concret, en s'appuyant sur l'approche design thinking. »</p>
+    </section>
+
+    <section class="reveal sprint" data-stagger>
+      <div class="sprint__line" aria-hidden="true"></div>
+      <div class="sprint__step"><img src="assets/betset/icon-definition.svg" alt=""><b>Définition</b><ul><li>Recherche quantitative</li><li>User Personas</li><li>Carte d’empathie</li></ul></div>
+      <div class="sprint__step"><img src="assets/betset/icon-ideation.svg" alt=""><b>Idéation</b><ul><li>Démos inspirante</li><li>Crazy 8’s</li><li>Wireframe</li></ul></div>
+      <div class="sprint__step"><img src="assets/betset/icon-conception.svg" alt=""><b>Conception</b><ul><li>UI Kit</li><li>Design haute fidélité</li></ul></div>
+      <div class="sprint__step"><img src="assets/betset/icon-prototype.svg" alt=""><b>Prototype</b><ul><li>Prototype</li></ul></div>
+      <div class="sprint__step"><img src="assets/betset/icon-test.svg" alt=""><b>Test</b><ul><li>Interview utilisateur</li><li>Itération</li></ul></div>
+    </section>
+
+    <section>
+      <h2 class="phase-title reveal">Phase 1 : <span>Définition</span></h2>
+      <div class="reveal">
+        <h3 class="bs-sub bs-sub--accent">Recherche quantitative</h3>
+        <p class="bs-text" style="margin-top:12px;max-width:615px">Nous avons réalisé une enquête en ligne auprès d’environ 70 utilisateurs appartenant à notre tranche démographique cible.</p>
+        <figure class="figure"><img src="assets/betset/charts.png" alt="Tranche d’âge : majorité 18-34 ans. Genre : 52,6 % de femmes, 47,4 % d’hommes. Épisode de dépression : 50 % en ont vécu au moins un." loading="lazy"></figure>
+      </div>
+      <div class="bs-cols reveal">
+        <div><h4>Causes de mal-être</h4><p class="bs-text" style="font-size:15px">Les causes de mal-être citées sont multiples :</p><ul><li>Solitude, relations familiales ou amoureuses difficiles</li><li>Charge de travail, pression des études</li><li>Comparaison constante sur les réseaux sociaux</li><li>Manque de direction dans la vie ou incertitude sur l’avenir</li></ul></div>
+        <div><h4>Symptômes fréquents</h4><p class="bs-text" style="font-size:15px">Les symptômes les plus fréquemment ressentis :</p><ul><li>Fatigue persistante, manque d’énergie</li><li>Difficultés de concentration</li><li>Tristesse durable, sentiment de vide</li><li>Anxiété, irritabilité, surmenage</li></ul></div>
+        <div><h4>Fonctionnalités</h4><p class="bs-text" style="font-size:15px">Les fonctionnalités les plus demandées :</p><ul><li>Suivi quotidien : humeur, sommeil, activité</li><li>Espace personnel : journal émotionnel, notes privées</li><li>Aide professionnelle : accès à un psychologue ou coach</li><li>Support instantané : chatbot, ressources de soutien</li><li>Activités bien-être : méditation</li></ul></div>
+      </div>
+      <div class="bs-needs reveal">
+        <div>
+          <h3 class="bs-sub" style="margin-top:0">Besoins utilisateurs</h3>
+          <ul>
+            <li>Un outil intuitif pour noter et visualiser leurs émotions, leurs niveaux d’énergie ou de stress au quotidien.</li>
+            <li>Un endroit où ils peuvent librement écrire, enregistrer ou dessiner leurs pensées, sans peur d’être jugés.</li>
+            <li>Des pratiques concrètes (ex. : respiration, écriture guidée, auto-questionnaires) qui sont accessibles sans jargon.</li>
+            <li>Disposition d’un tableau de bord, bilans réguliers leur permettant de faire un état des lieux de leur santé mentale.</li>
+          </ul>
+        </div>
+        <img src="assets/betset/ring-60.png" alt="Jauge de stabilité mentale à 60 %" width="300" height="312">
+      </div>
+
+      <h3 class="bs-sub bs-sub--accent reveal">Users Personas</h3>
+      <article class="persona reveal">
+        <div class="persona__photo">
+          <img src="assets/betset/persona-awa.jpg" alt="Portrait d’Awa" loading="lazy">
+          <div class="persona__id"><b>Awa</b><dl><dt>Age</dt><dd>22 ans</dd><dt>Statut</dt><dd>Etudiante en licence</dd><dt>Lieu</dt><dd>Dakar</dd><dt>Genre</dt><dd>Féminin</dd></dl></div>
+        </div>
+        <div>
+          <p class="persona__quote">« J’ai l’impression de stagner dans ma vie. Je veux avancer, mais je me sens toujours fatiguée… »</p>
+          <div class="persona__cols">
+            <div class="persona__col"><h4>Objectifs</h4><ul><li>Retrouver un équilibre mental au quotidien</li><li>Pouvoir exprimer ses émotions librement, sans jugement</li><li>Avoir des outils simples pour comprendre ce qu’elle ressent</li><li>Se sentir accompagnée même sans consulter un professionnel</li></ul></div>
+            <div class="persona__col persona__col--frustration"><h4>Frustrations</h4><ul><li>Elle ne sait pas comment gérer son mal-être</li><li>Elle a peur d’être jugée si elle en parle autour d’elle</li><li>Elle ne veut pas d’une app trop complexe ou culpabilisante</li><li>Elle doute de l’efficacité réelle d’une application</li></ul></div>
+          </div>
+          <p class="persona__bio">Awa vit des épisodes de fatigue mentale et de baisse de motivation. Elle n’a jamais consulté un professionnel et garde tout pour elle. Elle est très exposée aux réseaux sociaux, ce qui accentue son anxiété et son sentiment d’inaction.</p>
+        </div>
+      </article>
+      <article class="persona reveal">
+        <div class="persona__photo">
+          <img src="assets/betset/persona-mamadou.jpg" alt="Portrait de Mamadou" loading="lazy">
+          <div class="persona__id"><b>Mamadou</b><dl><dt>Age</dt><dd>29 ans</dd><dt>Statut</dt><dd>Employé</dd><dt>Lieu</dt><dd>Thies</dd><dt>Genre</dt><dd>Masculin</dd></dl></div>
+        </div>
+        <div>
+          <p class="persona__quote">« Je fais semblant d’aller bien, mais à l’intérieur, c’est un peu le chaos. »</p>
+          <div class="persona__cols">
+            <div class="persona__col"><h4>Objectifs</h4><ul><li>Garder le contrôle sur sa santé mentale sans exposer sa vulnérabilité</li><li>Trouver des moyens de ralentir mentalement malgré le rythme de travail</li><li>Accéder à un soutien discret et personnalisé</li><li>Comprendre ses états émotionnels sans forcément parler à quelqu’un</li></ul></div>
+            <div class="persona__col persona__col--frustration"><h4>Frustrations</h4><ul><li>Il n’a pas le temps pour une routine mentale exigeante</li><li>Il redoute de s'engager dans quelque chose qu’il n’arrivera pas à suivre</li><li>Il ne trouve pas d’outil qui respecte sa pudeur émotionnelle</li></ul></div>
+          </div>
+          <p class="persona__bio">Mamadou travaille beaucoup, parfois jusqu’à l’épuisement. Il a connu un épisode dépressif il y a deux ans suite à une rupture. Il en parle rarement. Il ressent encore aujourd’hui un manque de motivation, une anxiété diffuse et une difficulté à décrocher de son téléphone.</p>
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <h2 class="phase-title reveal">Phase 2 : <span>Idéation</span></h2>
+      <h3 class="bs-sub reveal">Wireframe</h3>
+      <figure class="figure figure--shadow reveal"><img src="assets/betset/wireframe.png" alt="Wireframe du tableau de bord BetSet : stabilité mentale, humeur, sommeil, pause mentale et coin sérénité" loading="lazy"></figure>
+    </section>
+
+    <section>
+      <h2 class="phase-title reveal">Phase 3 : <span>Conception</span></h2>
+      <h3 class="bs-sub reveal">UI Kits</h3>
+      <figure class="figure reveal"><img src="assets/betset/ui-kits.png" alt="UI Kit : typographie Poppins, palette orange et jaune, icônes, émojis d’humeur et couleurs tertiaires" loading="lazy"></figure>
+      <h3 class="bs-sub bs-sub--accent reveal">Conception haute fidélité</h3>
+      <figure class="figure reveal"><img src="assets/betset/hifi.png" alt="Maquettes haute fidélité desktop et mobile du tableau de bord BetSet" loading="lazy"></figure>
+    </section>
+
+    <section class="reveal">
+      <h2 class="phase-title">Phase 4 : <span>Prototype</span></h2>
+      <p class="bs-link" style="margin-top:40px"><img src="assets/betset/icon-prototype.svg" alt="">
+        <span>Lien prototype : <a href="https://www.figma.com/proto/NaH766uPExvnTLmLogyNIP/BetSet-Application-de-sant%C3%A9-mentale?page-id=0%3A1&node-id=163-1298&viewport=156%2C-266%2C0.28&t=p55hK05TRu3ahsh2-1&scaling=scale-down-width&content-scaling=fixed" target="_blank" rel="noopener">Cliquez ici</a></span>
+      </p>
+    </section>
+  </div>
+
+  <section class="bs-thanks reveal">
+    <p>Merci pour votre attention</p>
+    <img src="assets/betset/logo-betset.svg" alt="Logo BetSet" width="95" height="84">
+  </section>
+
+  <section class="container more">
+    <h2 class="more__title reveal">Plus de projets</h2>
+    <div class="more__grid" data-stagger>
+      <a class="card card--wikilo" href="projet-wikilo.html" aria-label="Wikilo — application mobile de transport de colis">
+        <img class="card__logo card__logo--sm" src="assets/wikilo/logo-wikilo.png" alt="">
+        <div class="card__media"><img src="assets/wikilo/hero-iphones.png" alt=""></div>
+        <span class="card__cta">Voir l’étude de cas →</span>
+      </a>
+      <a class="card card--mcn" href="projet-mcn.html" aria-label="Website MCN — Musée des Civilisations Noires">
+        <img class="card__logo card__logo--sm" src="assets/mcn/logo-mcn.png" alt="">
+        <p class="card__title">Website MCN</p>
+        <div class="card__media"><img src="assets/mcn/hero-site.png" alt=""></div>
+        <span class="card__cta">Voir l’étude de cas →</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p class="site-footer__name">Khady Lo</p>
+  <div class="site-footer__links">
+    <a href="https://www.linkedin.com/in/khady-lo-b90313228/" target="_blank" rel="noopener">Linkedin</a>
+    <a href="https://dribbble.com/khadylo" target="_blank" rel="noopener">Dribbble</a>
+    <a href="mailto:khadylolo200@gmail.com">Email</a>
+  </div>
+  <p class="site-footer__meta">© 2026 Khady Lo — Product Designer, Dakar</p>
+</footer>
+
+<button class="to-top" type="button" aria-label="Revenir en haut"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 15.8V4.2"/><path d="M4.2 10 10 4.2 15.8 10"/></svg></button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

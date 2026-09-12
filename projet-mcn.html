@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Website MCN — Étude de cas · Khady Lo</title>
+<meta name="description" content="Hackathon Dakar Slush × Musée des Civilisations Noires : conception d’une expérience web immersive et d’une visite virtuelle 3D en 3 jours.">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Reem+Kufi:wght@500;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .case--mcn { --accent-cs: #ff5800; --hero-bg: #1e1e1e; --hero-fg: #fff; }
+  .case--mcn .case__hero-head { top: 6.5%; width: min(700px, 92%); }
+  .case--mcn .case__hero-title { font-family: var(--font-sans); font-weight: 500; font-size: clamp(22px, 2.6vw, 32px); }
+  .case--mcn .case__hero-device { width: 66.4%; }
+  .case--mcn .case__hero-device img { border-radius: 10px 10px 0 0; box-shadow: 0 -10px 60px rgba(0,0,0,.4); }
+</style>
+</head>
+<body class="case case--sans case--mcn">
+
+<header class="site-header site-header--light">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="Khady Lo — accueil">
+      <svg viewBox="0 0 41.4332 35.0043" fill="currentColor" aria-hidden="true"><path d="M5.70837 16.1443C5.70837 17.9171 5.70837 19.5391 5.70837 21.0856C5.70837 22.6321 5.70837 24.5936 5.70837 26.2155C5.70837 29.6481 5.70837 32.5902 5.70837 35.0043H0.0756076C0.113411 30.1762 0.151215 24.405 0.151215 17.6908C0.151215 10.9767 0.151215 11.6556 0.0756076 7.99677C0.0756076 5.35637 0.0378038 2.71596 0 0.0378418H5.82178C5.82178 2.82912 5.78398 5.88445 5.74618 9.16609C5.74618 11.6933 5.74618 14.032 5.74618 16.182L5.70837 16.1443Z"/><path d="M28.7312 26.5926C31.4152 29.0444 34.4773 31.8357 37.9553 35.0042H29.9787C27.7861 32.9673 25.5934 30.9681 23.4764 29.0067C18.1461 24.2163 15.1218 21.4627 14.3657 20.7837V20.6329C15.8401 19.1618 19.0156 15.8801 23.8923 10.8634C27.3324 7.31769 30.7726 3.69656 34.1749 0H41.4332C37.6528 3.62112 33.7969 7.50629 29.8275 11.5423C25.48 15.9933 22.7582 18.7846 21.6619 19.9162V20.0293C22.2289 20.5574 24.5727 22.7452 28.769 26.5549L28.7312 26.5926Z"/><path d="M14.9327 27.347C17.39 29.6102 20.1875 32.1375 23.2874 34.9665H15.3108C13.3828 33.1936 11.4926 31.4585 9.64021 29.7611C8.12806 28.4032 6.80493 27.2339 5.67082 26.1777C2.75993 23.575 1.05876 22.0285 0.491699 21.5381V21.3873C1.4746 20.4065 3.17577 18.6337 5.67082 16.1065C6.91834 14.824 8.39269 13.3152 10.0183 11.6178C13.7608 7.80805 17.4278 3.9606 21.0948 0H28.4665C24.4215 3.84744 20.3009 7.99665 16.0291 12.3345C11.6816 16.7854 8.95975 19.5767 7.82563 20.7083V20.8215C8.39269 21.3495 10.7365 23.5373 14.9327 27.347Z"/></svg>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html#philosophie">Philosophie &amp; Valeurs</a>
+      <a href="index.html#projets">Projets</a>
+      <a href="index.html#competences">Compétences</a>
+    </nav>
+    <a class="btn-contact" href="mailto:khadylolo200@gmail.com">Contact</a>
+    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main>
+  <div class="case-header-space"></div>
+
+  <div class="container">
+    <div class="case__meta">
+      <div>
+        <p class="case__meta-label case__meta-label--lg">Projet</p>
+        <h1 class="case__title">Hackathon — Dakar Slush × Musée des Civilisations Noires</h1>
+      </div>
+      <div class="case__facts">
+        <div class="case__fact"><p class="case__meta-label">Réalisé par</p><p>Khady Lo</p></div>
+        <div class="case__fact"><p class="case__meta-label">Mon rôle</p><p>UX /UI Designer</p></div>
+        <div class="case__fact"><p class="case__meta-label">Durée</p><p>3 jours</p></div>
+      </div>
+    </div>
+
+    <div class="case__hero">
+      <div class="case__hero-card">
+        <div class="case__hero-head">
+          <img class="case__hero-logo" src="assets/mcn/logo-mcn.png" alt="Logo du Musée des Civilisations Noires" width="80" height="89">
+          <p class="case__hero-title">Expérience web immersive et visite virtuelle 3D</p>
+        </div>
+        <div class="case__hero-device"><img src="assets/mcn/hero-site.png" alt="Page d’accueil du site du musée" width="829" height="392"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content case__body">
+    <section class="reveal">
+      <h2 class="cs-h3">01 - Contexte</h2>
+      <p class="cs-text">Dans le cadre du Hackathon Dakar Slush, organisé en partenariat avec le Musée des Civilisations Noires, nous avons été invités à imaginer des solutions digitales capables de renforcer l’accès, la transmission et la valorisation du patrimoine culturel.<br>Le musée, situé à Dakar, est un espace dédié à l’histoire, aux cultures et aux civilisations africaines.</p>
+      <p class="cs-text"><strong>Notre défi :</strong> imaginer comment le numérique pouvait prolonger l’expérience du musée et permettre à un public plus large de découvrir ses espaces et ses collections autrement.</p>
+    </section>
+
+    <section class="reveal">
+      <h2 class="cs-h3">02 - Objectifs</h2>
+      <p class="cs-text">Créer une solution digitale (site web) permettant aux visiteurs :</p>
+      <ul class="cs-list">
+        <li>D’accéder à une expérience enrichie et interactive autour des œuvres exposées.</li>
+        <li>De démocratiser l’accès aux contenus culturels du musée via le digital.</li>
+        <li>De contribuer à faire rayonner ce lieu emblématique au-delà de ses murs.</li>
+      </ul>
+    </section>
+
+    <section class="reveal">
+      <h2 class="cs-h3">03 - Design Process</h2>
+      <div class="process-chips" data-stagger>
+        <div class="process-chip">Immersion terrain</div>
+        <div class="process-chip">Inspiration &amp; Benchmark</div>
+        <div class="process-chip">Direction UI</div>
+        <div class="process-chip">Hi-Fi Design</div>
+        <div class="process-chip">Prototype</div>
+        <div class="process-chip">Implémentation</div>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <h2 class="cs-h3">Immersion terrain</h2>
+      <div class="figure-row" data-stagger>
+        <img src="assets/mcn/immersion-1.jpg" alt="Hall du Musée des Civilisations Noires et son baobab monumental" width="506" height="900">
+        <img src="assets/mcn/immersion-2.jpg" alt="Vitrine de crânes fossiles exposés au musée" width="506" height="900">
+      </div>
+    </section>
+
+    <section class="reveal">
+      <h2 class="cs-h3">Design site web</h2>
+      <div class="browser-frame">
+        <div class="browser-frame__bar" aria-hidden="true"><i></i><i></i><i></i><span>musee-beta.vercel.app</span></div>
+        <div class="browser-frame__scroll" tabindex="0"><img src="assets/mcn/design-site-web.jpg" alt="Maquette complète de la page d’accueil du site du musée : hero, présentation, galeries, visite virtuelle, évènements, articles et pied de page" width="1393" height="5600" loading="lazy"></div>
+        <p class="browser-frame__hint">↕ Faites défiler pour parcourir la page complète</p>
+      </div>
+    </section>
+
+    <section class="reveal links-list">
+      <a href="https://www.figma.com/proto/XsnV1h5lq3N9N6s68rhitc/Hacketon-Mus%C3%A9e-de-la-civilisation?node-id=119-3335&viewport=270%2C40%2C0.06&t=2jwnAvstOnAROOHy-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=119%3A3084&page-id=119%3A685" target="_blank" rel="noopener">Lien prototype <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.16667 10H15.8333"/><path d="M10 4.16667L15.8333 10L10 15.8333"/></svg></a>
+      <a href="https://musee-beta.vercel.app/" target="_blank" rel="noopener">Lien site web <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.16667 10H15.8333"/><path d="M10 4.16667L15.8333 10L10 15.8333"/></svg></a>
+    </section>
+  </div>
+
+  <section class="container more">
+    <h2 class="more__title reveal">Plus de projets</h2>
+    <div class="more__grid" data-stagger>
+      <a class="card card--btc" href="projet-btc-change.html" aria-label="BTC Change — plateforme de gestion de change">
+        <img class="card__logo" src="assets/btc/logo-btc.png" alt="">
+        <p class="card__title">BTC Change</p>
+        <div class="card__media"><img src="assets/btc/hero-imac.png" alt=""></div>
+        <span class="card__cta">Voir l’étude de cas →</span>
+      </a>
+      <a class="card card--betset" href="projet-betset.html" aria-label="BetSet — application de santé mentale">
+        <img class="card__logo" src="assets/betset/logo-betset.svg" alt="">
+        <p class="card__title">BetSet</p>
+        <div class="card__media"><img src="assets/betset/macbook.png" alt=""></div>
+        <span class="card__cta">Voir l’étude de cas →</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p class="site-footer__name">Khady Lo</p>
+  <div class="site-footer__links">
+    <a href="https://www.linkedin.com/in/khady-lo-b90313228/" target="_blank" rel="noopener">Linkedin</a>
+    <a href="https://dribbble.com/khadylo" target="_blank" rel="noopener">Dribbble</a>
+    <a href="mailto:khadylolo200@gmail.com">Email</a>
+  </div>
+  <p class="site-footer__meta">© 2026 Khady Lo — Product Designer, Dakar</p>
+</footer>
+
+<button class="to-top" type="button" aria-label="Revenir en haut"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 15.8V4.2"/><path d="M4.2 10 10 4.2 15.8 10"/></svg></button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
