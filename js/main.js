@@ -138,7 +138,7 @@
   /* Groupes (grilles) : décalage entre enfants */
   document.querySelectorAll('[data-stagger]').forEach((group) => {
     gsap.from(group.children, {
-      y: 40, opacity: 0, duration: 0.9, ease: 'power3.out', stagger: 0.1,
+      y: 20, opacity: 0, duration: 0.8, ease: 'power3.out', stagger: 0.08,
       scrollTrigger: { trigger: group, start: 'top 88%', once: true },
     });
   });

@@ -423,7 +423,7 @@ h1, h2, h3, h4, p { margin: 0; }
 
 /* ---------- Grille projets : « Voir plus » ---------- */
 .card--extra.is-collapsed { display: none; }
-.projects__more { margin-top: 44px; display: flex; justify-content: center; }
+.projects__more { margin-top: 84px; display: flex; justify-content: center; }
 .projects__more .btn-pill { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.35); }
 .projects__more .btn-pill:hover { background: #fff; color: var(--ink); box-shadow: none; }
 .projects__more .btn-pill svg { transition: transform .35s var(--ease); }

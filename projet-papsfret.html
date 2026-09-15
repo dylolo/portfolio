@@ -93,7 +93,7 @@
       </div>
 
       <h3 class="cs-h4">Le trajet d’une marchandise, en résumé</h3>
-      <ol class="pf-flow" data-stagger>
+      <ol class="pf-flow">
         <li>Demande client</li><li>Offre</li><li>Documents</li><li>Récupération</li><li>Douane départ</li><li>Avion · bateau · camion</li><li>Arrivée à Dakar</li><li>Douane arrivée</li><li>Tri des colis</li><li>Livraison</li>
       </ol>
       <p class="cs-text">Une dizaine d’étapes. Des acteurs qu’on ne contrôle pas : compagnies aériennes, douane, partenaires, transitaires. <b>PapsFret est la plateforme que les agents utilisent pour piloter cette chaîne.</b></p>
@@ -247,17 +247,7 @@
 
       <h3 class="cs-h4">L’architecture d’information</h3>
       <p class="cs-text">La navigation découle du modèle métier :</p>
-      <div class="pf-ia">
-        <div class="pf-ia__sidebar" aria-hidden="true">
-          <img src="assets/papsfret/logo.svg" alt="" width="110" height="29">
-          <ul><li>Dashboard</li><li>Cotation</li><li class="is-active">Expéditions<ul><li>Tous</li><li>Fret</li><li>Groupage</li><li>Express</li></ul></li><li>Opération</li><li>Transport</li><li>Douane</li><li>Finance</li><li>Rapport</li></ul>
-        </div>
-        <div class="pf-ia__notes">
-          <div><b>Expéditions</b><p>La porte d’entrée : une expédition quel que soit le service, filtrée par Fret, Groupage ou Express.</p></div>
-          <div><b>Opération · Transport · Douane</b><p>Les modules communs aux trois services : réception, feuille de route, statuts douaniers.</p></div>
-          <div><b>Finance · Rapport</b><p>Ce que la chaîne produit : facturation au poids réel et suivi de l’activité.</p></div>
-        </div>
-      </div>
+      <div class="pf-nav" data-stagger><span>Dashboard</span><span>Cotation</span><span>Expéditions</span><span>Opération</span><span>Transport</span><span>Douane</span><span>Finance</span><span>Rapport</span></div>
 
       <h3 class="cs-h4">Les user flows</h3>
       <p class="cs-text">Les parcours ont été tracés phase par phase avant toute maquette, avec leurs conditions et leurs points de décision — c’est là que les règles métier de la phase Définition ont été mises à l’épreuve.</p>
