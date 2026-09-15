@@ -56,6 +56,46 @@
     });
   }
 
+
+  /* Visionneuse à étapes (PapsFret) */
+  document.querySelectorAll('[data-stepper]').forEach((stepper) => {
+    const tabs = [...stepper.querySelectorAll('[role="tab"]')];
+    const panels = [...stepper.querySelectorAll('[role="tabpanel"]')];
+    const select = (i) => {
+      tabs.forEach((t, j) => t.setAttribute('aria-selected', String(i === j)));
+      panels.forEach((p, j) => { p.hidden = i !== j; p.classList.toggle('is-active', i === j); });
+    };
+    tabs.forEach((t, i) => {
+      t.addEventListener('click', () => select(i));
+      t.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') { select((i + 1) % tabs.length); tabs[(i + 1) % tabs.length].focus(); }
+        if (e.key === 'ArrowLeft') { select((i - 1 + tabs.length) % tabs.length); tabs[(i - 1 + tabs.length) % tabs.length].focus(); }
+      });
+    });
+  });
+
+  /* Visionneuse plein écran sur les visuels des études de cas */
+  const zoomables = document.querySelectorAll('.case .figure img, .case .pf-stepper__panel img, .case .compare__img img, .case .screens img');
+  if (zoomables.length) {
+    const box = document.createElement('div');
+    box.className = 'lightbox'; box.setAttribute('role', 'dialog'); box.setAttribute('aria-modal', 'true'); box.setAttribute('aria-label', 'Visuel agrandi');
+    box.innerHTML = '<button class="lightbox__close" type="button" aria-label="Fermer">×</button><figure><img alt=""><figcaption></figcaption></figure>';
+    document.body.appendChild(box);
+    const img = box.querySelector('img'); const cap = box.querySelector('figcaption');
+    const close = () => { box.classList.remove('is-open'); document.body.style.overflow = ''; };
+    zoomables.forEach((el) => {
+      el.classList.add('zoomable');
+      el.addEventListener('click', () => {
+        img.src = el.currentSrc || el.src; img.alt = el.alt;
+        const fc = el.closest('figure')?.querySelector('figcaption');
+        cap.textContent = fc ? fc.textContent : el.alt;
+        box.classList.add('is-open'); document.body.style.overflow = 'hidden';
+      });
+    });
+    box.addEventListener('click', (e) => { if (e.target === box || e.target.closest('.lightbox__close')) close(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+  }
+
   if (reduceMotion || !hasGsap) return;
 
   /* Page protégée : les animations démarrent après déverrouillage */

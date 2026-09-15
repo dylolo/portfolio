@@ -75,7 +75,7 @@
           <p class="case__hero-title">Piloter une chaîne de fret de bout en bout</p>
           <div class="chips"><span class="chip">UX Research</span><span class="chip">Service blueprint</span><span class="chip">Product design</span></div>
         </div>
-        <div class="case__hero-device case__hero-device--frame"><img src="assets/papsfret/operation-01.png" alt="Vue d’ensemble des opérations dans PapsFret" width="1800" height="1280"></div>
+        <div class="case__hero-device case__hero-device--frame"><span class="pf-chrome" aria-hidden="true"><i></i><i></i><i></i></span><img src="assets/papsfret/operation-01.png" alt="Vue d’ensemble des opérations dans PapsFret" width="1800" height="1280"></div>
       </div>
     </div>
   </div>
@@ -85,6 +85,12 @@
     <section class="reveal">
       <h2 class="cs-h3">01 - Contexte</h2>
       <p class="cs-text">Paps est une entreprise de logistique présente au Sénégal, au Bénin, en Côte d’Ivoire et au Cap-Vert. Jusqu’ici, Paps livrait surtout à l’intérieur d’un pays, avec son outil interne PapsOps. Puis l’entreprise s’est mise à transporter des marchandises <b>entre pays</b> : de la France ou de la Chine vers le Sénégal. Aucun outil n’existait pour ça.</p>
+      <div class="stat-row pf-stats" data-stagger>
+        <div class="stat"><b>4</b><span>pays couverts</span></div>
+        <div class="stat"><b>3</b><span>services dans un seul outil</span></div>
+        <div class="stat"><b>10</b><span>étapes de la chaîne</span></div>
+        <div class="stat"><b>5</b><span>entretiens, un par maillon</span></div>
+      </div>
 
       <h3 class="cs-h4">Le trajet d’une marchandise, en résumé</h3>
       <ol class="pf-flow" data-stagger>
@@ -140,21 +146,16 @@
     <section class="reveal">
       <h2 class="cs-h3">03 - Ma démarche</h2>
       <p class="cs-text">J’ai suivi les cinq phases du <b>design thinking</b>.</p>
-      <div class="table-wrap">
-        <table class="audit-table">
-          <thead><tr><th>Phase</th><th>Ce qu’elle a produit</th></tr></thead>
-          <tbody>
-            <tr><td>Empathie</td><td>Entretiens, guides d’entretien, visites terrain</td></tr>
-            <tr><td>Définition</td><td>Service blueprint, modèle du métier, règles métier, cadrage du problème</td></tr>
-            <tr><td>Idéation</td><td>Benchmark, architecture d’information, user flows</td></tr>
-            <tr><td>Prototypage</td><td>Parcours et interfaces du service Groupage</td></tr>
-            <tr><td>Test</td><td>Tests avec les agents, itérations courtes</td></tr>
-          </tbody>
-        </table>
+      <div class="pf-phases" data-stagger>
+        <a class="pf-phase" href="#empathie"><span>01</span><b>Empathie</b><p>Entretiens, guides d’entretien, visites terrain</p></a>
+        <a class="pf-phase" href="#definition"><span>02</span><b>Définition</b><p>Service blueprint, modèle du métier, règles métier, cadrage</p></a>
+        <a class="pf-phase" href="#ideation"><span>03</span><b>Idéation</b><p>Benchmark, architecture d’information, user flows</p></a>
+        <a class="pf-phase" href="#prototypage"><span>04</span><b>Prototypage</b><p>Parcours et interfaces du service Groupage</p></a>
+        <a class="pf-phase" href="#test"><span>05</span><b>Test</b><p>Tests avec les agents, itérations courtes</p></a>
       </div>
     </section>
 
-    <section class="reveal">
+    <section class="reveal" id="empathie">
       <h2 class="cs-h3">3.1 - Empathie</h2>
       <h3 class="cs-h4">Comprendre un métier que je ne connaissais pas</h3>
       <p class="cs-text"><b>Pourquoi.</b> Le fret ne s’invente pas. Si on saute cette étape, on conçoit le métier tel qu’on l’imagine, pas tel qu’il se pratique. La difficulté n’était pas de trouver des gens à interroger. C’était que <b>chacun ne voit qu’un morceau de la chaîne</b>. Sans méthode, on récolte des récits qui ne se recoupent pas.</p>
@@ -206,7 +207,7 @@
       </div>
     </section>
 
-    <section class="reveal">
+    <section class="reveal" id="definition">
       <h2 class="cs-h3">3.2 - Définition</h2>
       <h3 class="cs-h4">Cadrer le problème et modéliser le métier</h3>
       <p class="cs-text">Sur un produit complexe, les allers-retours ne viennent pas de l’UI. Ils viennent de <b>règles métier découvertes trop tard</b>. Chaque règle qui remonte après la maquette coûte un cycle complet : écran, spec, développement, recette. C’est la phase que je défends le plus, et celle que beaucoup de projets sautent.</p>
@@ -220,7 +221,7 @@
       <figure class="figure figure--shadow"><img src="assets/papsfret/definition-blueprint.png" alt="Service blueprint Fret / Maritime / Routier dans FigJam" loading="lazy"><figcaption>Service blueprint Fret / Maritime / Routier : les quatre couches (utilisateur, back-office, systèmes &amp; tiers, règles métier) alignées étape par étape.</figcaption></figure>
     </section>
 
-    <section class="reveal">
+    <section class="reveal" id="ideation">
       <h2 class="cs-h3">3.3 - Idéation</h2>
       <p class="cs-text">Le métier une fois modélisé, plusieurs produits différents restaient possibles. L’idéation a servi à trancher entre des <b>modèles</b>.</p>
       <h3 class="cs-h4">Benchmark</h3>
@@ -246,31 +247,50 @@
 
       <h3 class="cs-h4">L’architecture d’information</h3>
       <p class="cs-text">La navigation découle du modèle métier :</p>
-      <div class="pf-nav" data-stagger><span>Dashboard</span><span>Cotation</span><span>Expéditions</span><span>Opération</span><span>Transport</span><span>Douane</span><span>Finance</span><span>Rapport</span></div>
+      <div class="pf-ia">
+        <div class="pf-ia__sidebar" aria-hidden="true">
+          <img src="assets/papsfret/logo.svg" alt="" width="110" height="29">
+          <ul><li>Dashboard</li><li>Cotation</li><li class="is-active">Expéditions<ul><li>Tous</li><li>Fret</li><li>Groupage</li><li>Express</li></ul></li><li>Opération</li><li>Transport</li><li>Douane</li><li>Finance</li><li>Rapport</li></ul>
+        </div>
+        <div class="pf-ia__notes">
+          <div><b>Expéditions</b><p>La porte d’entrée : une expédition quel que soit le service, filtrée par Fret, Groupage ou Express.</p></div>
+          <div><b>Opération · Transport · Douane</b><p>Les modules communs aux trois services : réception, feuille de route, statuts douaniers.</p></div>
+          <div><b>Finance · Rapport</b><p>Ce que la chaîne produit : facturation au poids réel et suivi de l’activité.</p></div>
+        </div>
+      </div>
 
       <h3 class="cs-h4">Les user flows</h3>
       <p class="cs-text">Les parcours ont été tracés phase par phase avant toute maquette, avec leurs conditions et leurs points de décision — c’est là que les règles métier de la phase Définition ont été mises à l’épreuve.</p>
       <figure class="figure figure--shadow"><img src="assets/papsfret/ideation-userflows.png" alt="User flows PapsFret dans FigJam" loading="lazy"><figcaption>User flows PapsFret : chaque colonne correspond à une phase (création, groupage, opérations, douane), avec ses conditions et points de décision.</figcaption></figure>
     </section>
 
-    <section class="reveal">
+    <section class="reveal" id="prototypage">
       <h2 class="cs-h3">3.4 - Prototypage</h2>
       <p class="cs-text">Les écrans présentés concernent le service <b>Groupage</b>, commercialisé auprès des clients sous le nom <b>Easycolis</b>. Le produit interne parle de groupage, le client parle d’Easycolis : les deux désignent la même chose.</p>
       <figure class="figure figure--shadow"><img src="assets/papsfret/proto-overview.png" alt="Vue d’ensemble du fichier Figma Groupage fret V0" loading="lazy"><figcaption>Le fichier Figma « Groupage fret – V0 » : l’ensemble des écrans du parcours, organisés par flux.</figcaption></figure>
 
       <h3 class="cs-h4">A — Créer une expédition</h3>
-      <p class="cs-text">Un parcours en cinq étapes, commun aux trois services : service et route, expéditeurs et destinataires, contenu, services complémentaires, validation.</p>
-      <div class="pf-screens">
-        <figure class="figure figure--shadow"><img src="assets/papsfret/expedition-01.png" alt="Étape 1 : choix du mode de transport, du type de service et de la route" loading="lazy"><figcaption>Étape 1 — Service &amp; route : mode de transport (aérien, maritime, routier), type de service et origine / destination.</figcaption></figure>
-        <figure class="figure figure--shadow"><img src="assets/papsfret/expedition-02.png" alt="Étape 2 : liste des expéditeurs et destinataires" loading="lazy"><figcaption>Étape 2 — Expéditeurs &amp; destinataires : chaque expédition relie un expéditeur à un destinataire distinct.</figcaption></figure>
-        <figure class="figure figure--shadow"><img src="assets/papsfret/expedition-03.png" alt="Étape 3 : saisie du contenu d’un colis" loading="lazy"><figcaption>Étape 3 — Contenu : nature, poids, dimensions et valeur déclarée, les quatre champs obligatoires issus des entretiens.</figcaption></figure>
-        <figure class="figure figure--shadow"><img src="assets/papsfret/expedition-04.png" alt="Étape 3 : récapitulatif des colis par expédition" loading="lazy"><figcaption>Étape 3 — Les colis renseignés se replient en lignes de synthèse ; l’état « colis à renseigner » guide l’agent.</figcaption></figure>
-        <figure class="figure figure--shadow"><img src="assets/papsfret/expedition-06.png" alt="Étape 4 : services complémentaires" loading="lazy"><figcaption>Étape 4 — Services complémentaires : collecte à domicile et livraison finale, au choix par expédition.</figcaption></figure>
-        <figure class="figure figure--shadow"><img src="assets/papsfret/expedition-05.png" alt="Étape 5 : validation et récapitulatif" loading="lazy"><figcaption>Étape 5 — Validation : mode, route, direction et récapitulatif chiffré des expéditions avant confirmation.</figcaption></figure>
+      <p class="cs-text">Un parcours en cinq étapes, commun aux trois services. Cliquez sur une étape pour la parcourir.</p>
+      <div class="pf-stepper" data-stepper>
+        <ol class="pf-stepper__nav" role="tablist" aria-label="Étapes de création d’une expédition">
+          <li><button type="button" role="tab" aria-selected="true" aria-controls="pf-step-1" id="pf-tab-1"><span>1</span>Service &amp; route</button></li>
+          <li><button type="button" role="tab" aria-selected="false" aria-controls="pf-step-2" id="pf-tab-2"><span>2</span>Expéditeurs &amp; destinataires</button></li>
+          <li><button type="button" role="tab" aria-selected="false" aria-controls="pf-step-3" id="pf-tab-3"><span>3</span>Contenu</button></li>
+          <li><button type="button" role="tab" aria-selected="false" aria-controls="pf-step-4" id="pf-tab-4"><span>4</span>Services complémentaires</button></li>
+          <li><button type="button" role="tab" aria-selected="false" aria-controls="pf-step-5" id="pf-tab-5"><span>5</span>Validation</button></li>
+        </ol>
+        <div class="pf-stepper__panels">
+          <figure class="pf-stepper__panel is-active" id="pf-step-1" role="tabpanel" aria-labelledby="pf-tab-1"><img src="assets/papsfret/expedition-01.png" alt="Étape 1 : choix du mode de transport, du type de service et de la route" loading="lazy"><figcaption>Étape 1 — Service &amp; route : mode de transport (aérien, maritime, routier), type de service et origine / destination.</figcaption></figure>
+          <figure class="pf-stepper__panel" id="pf-step-2" role="tabpanel" aria-labelledby="pf-tab-2" hidden><img src="assets/papsfret/expedition-02.png" alt="Étape 2 : liste des expéditeurs et destinataires" loading="lazy"><figcaption>Étape 2 — Expéditeurs &amp; destinataires : chaque expédition relie un expéditeur à un destinataire distinct.</figcaption></figure>
+          <figure class="pf-stepper__panel" id="pf-step-3" role="tabpanel" aria-labelledby="pf-tab-3" hidden><img src="assets/papsfret/expedition-03.png" alt="Étape 3 : saisie du contenu d’un colis" loading="lazy"><figcaption>Étape 3 — Contenu : nature, poids, dimensions et valeur déclarée, les quatre champs obligatoires issus des entretiens. Les colis renseignés se replient en lignes de synthèse.</figcaption></figure>
+          <figure class="pf-stepper__panel" id="pf-step-4" role="tabpanel" aria-labelledby="pf-tab-4" hidden><img src="assets/papsfret/expedition-06.png" alt="Étape 4 : services complémentaires" loading="lazy"><figcaption>Étape 4 — Services complémentaires : collecte à domicile et livraison finale, au choix par expédition.</figcaption></figure>
+          <figure class="pf-stepper__panel" id="pf-step-5" role="tabpanel" aria-labelledby="pf-tab-5" hidden><img src="assets/papsfret/expedition-05.png" alt="Étape 5 : validation et récapitulatif" loading="lazy"><figcaption>Étape 5 — Validation : mode, route, direction et récapitulatif chiffré des expéditions avant confirmation.</figcaption></figure>
+        </div>
       </div>
+      <figure class="figure figure--shadow"><img src="assets/papsfret/expedition-04.png" alt="Étape 3 : récapitulatif des colis par expédition" loading="lazy"><figcaption>Détail de l’étape 3 — les colis renseignés se replient en lignes de synthèse ; l’état « colis à renseigner » guide l’agent.</figcaption></figure>
 
       <h3 class="cs-h4">B — Créer et suivre un groupage</h3>
-      <div class="pf-screens">
+      <div class="pf-screens pf-screens--2">
         <figure class="figure figure--shadow"><img src="assets/papsfret/groupage-01.png" alt="Liste des groupages avec statuts et ETA" loading="lazy"><figcaption>Liste des groupages : filtrage par mode de transport, onglets par statut (créé, consolidation, en préparation, en transit, arrivé, complété).</figcaption></figure>
         <figure class="figure figure--shadow"><img src="assets/papsfret/groupage-02.png" alt="Création d’un groupage aérien France → Sénégal avec batchs" loading="lazy"><figcaption>Création d’un groupage : l’agent glisse les expéditions dans des batchs (palettes) ; poids, volume et valeur se calculent en direct.</figcaption></figure>
       </div>
@@ -281,14 +301,14 @@
       </div>
 
       <h3 class="cs-h4">D — Réceptionner les colis</h3>
-      <div class="pf-screens">
+      <div class="pf-screens pf-screens--2">
         <figure class="figure figure--shadow"><img src="assets/papsfret/reception-01.png" alt="Écran de réception avec zone de scan et comparaison des poids" loading="lazy"><figcaption>Réception : scan des colis, puis comparaison entre poids attendu et poids mesuré — l’écart est affiché, car on facture au poids.</figcaption></figure>
         <figure class="figure figure--shadow"><img src="assets/papsfret/reception-02-douane.png" alt="Fiche groupage avec modification manuelle du statut douanier" loading="lazy"><figcaption>Fiche groupage : le statut douanier (export puis import) se valide manuellement, avec import du document justificatif.</figcaption></figure>
       </div>
       <p class="cs-text"><b>Design system.</b> J’ai réutilisé les composants existants de Paps et j’en ai créé de nouveaux pour les besoins propres à PapsFret.</p>
     </section>
 
-    <section class="reveal">
+    <section class="reveal" id="test">
       <h2 class="cs-h3">3.5 - Test</h2>
       <h3 class="cs-h4">Confronter les écrans au réel</h3>
       <div class="pf-cols">
@@ -357,6 +377,7 @@
   // Mot de passe : seul son empreinte SHA-256 est stockée ici. Pour en changer, remplacer GATE_HASH
   // par l'empreinte du nouveau mot de passe (voir README.md, section « Accès protégé »).
   const GATE_HASH = '5449d853eb3ce7c7ca852eca01ecbef2a4c3856af26a0fa79940e7255c908698';
+  document.body.classList.add('is-locked');
   (async () => {
     const gate = document.getElementById('gate');
     const form = document.getElementById('gate-form');
@@ -374,7 +395,6 @@
     };
     const fromUrl = new URLSearchParams(location.search).get('acces');
     if (sessionStorage.getItem('pf-access') === '1' || (fromUrl && await sha(fromUrl.trim()) === GATE_HASH)) { unlock(); return; }
-    document.body.classList.add('is-locked');
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       if (await sha(input.value.trim()) === GATE_HASH) { unlock(); return; }
