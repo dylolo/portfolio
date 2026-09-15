@@ -21,9 +21,9 @@
   --font-sans: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
   --font-serif: "Instrument Serif", Georgia, "Times New Roman", serif;
   --font-mono: "Barlow", "Helvetica Neue", Arial, sans-serif;
-  --font-kufi: "Reem Kufi", "Instrument Sans", Arial, sans-serif;
-  --font-sen: "Sen", "Instrument Sans", Arial, sans-serif;
-  --font-poppins: "Poppins", "Instrument Sans", Arial, sans-serif;
+  --font-kufi: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-sen: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-poppins: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
 
   --container: 1287px;
   --content: 954px;
@@ -511,3 +511,24 @@ body.is-locked { background: #e9f6fb; }
   .pf-gallery { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 600px) { .pf-gallery { grid-template-columns: 1fr; } .gate__field { flex-direction: column; } }
+
+/* ---------- PapsFret : rythme vertical et échelle typographique ---------- */
+.case--papsfret .case__body { gap: clamp(72px, 8vw, 120px); }
+.case--papsfret .case__body > section > .cs-h3 { margin-bottom: 8px; }
+.case--papsfret .cs-h3 { font-size: clamp(24px, 2.4vw, 34px); letter-spacing: -.01em; }
+.case--papsfret .cs-h4 { margin-top: clamp(40px, 4.5vw, 64px); font-size: clamp(19px, 1.8vw, 26px); letter-spacing: -.01em; }
+.case--papsfret .cs-h3 + .cs-h4 { margin-top: 24px; }
+.case--papsfret .cs-h4 + .cs-text, .case--papsfret .cs-h4 + .table-wrap, .case--papsfret .cs-h4 + .pf-flow, .case--papsfret .cs-h4 + .pf-cols, .case--papsfret .cs-h4 + .pf-screens, .case--papsfret .cs-h4 + .pf-insights, .case--papsfret .cs-h4 + .pf-nav, .case--papsfret .cs-h4 + .figure { margin-top: 18px; }
+.case--papsfret .cs-text { font-size: clamp(16px, 1.35vw, 19px); line-height: 1.65; }
+.case--papsfret .cs-text b { color: var(--gray-700); }
+.case--papsfret .cs-text + .table-wrap, .case--papsfret .cs-text + .pf-cols, .case--papsfret .cs-text + .pf-screens, .case--papsfret .cs-text + .pf-nav, .case--papsfret .cs-text + .figure, .case--papsfret .cs-text + .pf-schema { margin-top: 24px; }
+.case--papsfret .table-wrap + .cs-h4, .case--papsfret .figure + .cs-h4, .case--papsfret .pf-screens + .cs-h4 { margin-top: clamp(48px, 5vw, 72px); }
+.case--papsfret .audit-table { font-size: clamp(14px, 1.15vw, 16px); }
+.case--papsfret .audit-table th, .case--papsfret .audit-table td { padding: 14px 18px; }
+.case--papsfret .pf-quote { font-size: clamp(19px, 1.8vw, 24px); }
+.case--papsfret .priority b { font-size: 18px; }
+.case--papsfret .priority p { font-size: 15px; line-height: 1.6; }
+.case--papsfret .figure figcaption { font-size: 14px; line-height: 1.5; color: var(--gray-600); }
+.case--papsfret .pf-screens { gap: clamp(32px, 4vw, 56px); }
+.case--papsfret .pf-status { margin-top: 40px; }
+.case--papsfret .pf-status b { font-size: 17px; } .case--papsfret .pf-status p b { font-size: inherit; }

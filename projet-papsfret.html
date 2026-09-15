@@ -9,7 +9,7 @@
 <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Reem+Kufi:wght@400;500;600;700&family=Sen:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="css/style.css">
 <style>
   .case--papsfret { --accent-cs: #1c2b5a; --accent-2: #29a9d3; --hero-bg: #e9f6fb; --hero-fg: #1c2b5a; --chip-bg: #29a9d3; }
@@ -86,13 +86,13 @@
       <h2 class="cs-h3">01 - Contexte</h2>
       <p class="cs-text">Paps est une entreprise de logistique présente au Sénégal, au Bénin, en Côte d’Ivoire et au Cap-Vert. Jusqu’ici, Paps livrait surtout à l’intérieur d’un pays, avec son outil interne PapsOps. Puis l’entreprise s’est mise à transporter des marchandises <b>entre pays</b> : de la France ou de la Chine vers le Sénégal. Aucun outil n’existait pour ça.</p>
 
-      <h3 class="cs-h4" style="margin-top:40px">Le trajet d’une marchandise, en résumé</h3>
+      <h3 class="cs-h4">Le trajet d’une marchandise, en résumé</h3>
       <ol class="pf-flow" data-stagger>
         <li>Demande client</li><li>Offre</li><li>Documents</li><li>Récupération</li><li>Douane départ</li><li>Avion · bateau · camion</li><li>Arrivée à Dakar</li><li>Douane arrivée</li><li>Tri des colis</li><li>Livraison</li>
       </ol>
-      <p class="cs-text" style="margin-top:28px">Une dizaine d’étapes. Des acteurs qu’on ne contrôle pas : compagnies aériennes, douane, partenaires, transitaires. <b>PapsFret est la plateforme que les agents utilisent pour piloter cette chaîne.</b></p>
+      <p class="cs-text">Une dizaine d’étapes. Des acteurs qu’on ne contrôle pas : compagnies aériennes, douane, partenaires, transitaires. <b>PapsFret est la plateforme que les agents utilisent pour piloter cette chaîne.</b></p>
 
-      <h3 class="cs-h4" style="margin-top:48px">Trois services, une seule chaîne</h3>
+      <h3 class="cs-h4">Trois services, une seule chaîne</h3>
       <div class="table-wrap">
         <table class="audit-table pf-table">
           <thead><tr><th></th><th>Fret</th><th>Groupage <i>(Easycolis)</i></th><th>Express</th></tr></thead>
@@ -159,7 +159,7 @@
       <h3 class="cs-h4">Comprendre un métier que je ne connaissais pas</h3>
       <p class="cs-text"><b>Pourquoi.</b> Le fret ne s’invente pas. Si on saute cette étape, on conçoit le métier tel qu’on l’imagine, pas tel qu’il se pratique. La difficulté n’était pas de trouver des gens à interroger. C’était que <b>chacun ne voit qu’un morceau de la chaîne</b>. Sans méthode, on récolte des récits qui ne se recoupent pas.</p>
 
-      <h3 class="cs-h4" style="margin-top:40px">5 entretiens, un par maillon de la chaîne</h3>
+      <h3 class="cs-h4">5 entretiens, un par maillon de la chaîne</h3>
       <div class="table-wrap">
         <table class="audit-table">
           <thead><tr><th>Profil</th><th>Ce qu’il m’a apporté</th></tr></thead>
@@ -179,14 +179,14 @@
         <div><h4>Une restitution aux équipes</h4><p>J’ai rejoué mes constats devant les opérations avant de modéliser quoi que ce soit. Première vérification que j’avais bien compris.</p></div>
       </div>
 
-      <h3 class="cs-h4" style="margin-top:56px">Les phrases qui ont décidé de la conception</h3>
+      <h3 class="cs-h4">Les phrases qui ont décidé de la conception</h3>
       <div class="pf-insights" data-stagger>
         <div class="pf-insight"><blockquote>« Il faut la nature de la marchandise, il faut le poids, il faut les dimensions, il faut la valeur. C’est un impératif pour nous permettre de faire une offre. »</blockquote><p>→ Ces quatre champs sont obligatoires dans le parcours de création.</p></div>
         <div class="pf-insight"><blockquote>« Il y a des documents qui sont obligatoires en fonction de la nature de la marchandise. »</blockquote><p>→ Le formulaire ne peut pas être le même pour tous les colis.</p></div>
         <div class="pf-insight"><blockquote>« Tout colis qui quitte un pays A vers un pays B doit faire l’objet d’une déclaration d’export, et le pays de destination doit faire une déclaration d’import. »</blockquote><p>→ Deux statuts de douane distincts dans le suivi.</p></div>
       </div>
 
-      <h3 class="cs-h4" style="margin-top:56px">Ce que seule l’observation a révélé</h3>
+      <h3 class="cs-h4">Ce que seule l’observation a révélé</h3>
       <p class="cs-text">Les entretiens décrivent le processus. L’observation montre les conditions dans lesquelles il se déroule.</p>
       <div class="table-wrap">
         <table class="audit-table">
@@ -212,7 +212,7 @@
       <h3 class="cs-h4">Cadrer le problème et modéliser le métier</h3>
       <p class="cs-text">Sur un produit complexe, les allers-retours ne viennent pas de l’UI. Ils viennent de <b>règles métier découvertes trop tard</b>. Chaque règle qui remonte après la maquette coûte un cycle complet : écran, spec, développement, recette. C’est la phase que je défends le plus, et celle que beaucoup de projets sautent.</p>
       <blockquote class="pf-quote pf-quote--question">Comment permettre à un agent de piloter une chaîne d’une dizaine d’étapes, avec des acteurs externes et des obligations légales, sans qu’il ait à retenir toutes les règles par cœur ?</blockquote>
-      <h3 class="cs-h4" style="margin-top:48px">Ce que j’ai produit</h3>
+      <h3 class="cs-h4">Ce que j’ai produit</h3>
       <div class="pf-cols">
         <div><h4>Une cartographie du processus</h4><p>Du premier contact client jusqu’au paiement.</p></div>
         <div><h4>Un service blueprint</h4><p>Fret / Maritime / Routier — quatre couches en regard : actions utilisateur, back-office, systèmes et tiers, règles métier. Il a fait remonter des règles que personne n’avait formulées parce qu’elles paraissaient évidentes.</p></div>
@@ -224,10 +224,10 @@
     <section class="reveal">
       <h2 class="cs-h3">3.3 - Idéation</h2>
       <p class="cs-text">Le métier une fois modélisé, plusieurs produits différents restaient possibles. L’idéation a servi à trancher entre des <b>modèles</b>.</p>
-      <h3 class="cs-h4" style="margin-top:40px">Benchmark</h3>
+      <h3 class="cs-h4">Benchmark</h3>
       <p class="cs-text">J’ai étudié Flexport, DHL, UPS et Speedaf pour voir comment ces plateformes résolvent le même problème structurel : suivre une marchandise dont on ne contrôle pas tous les acteurs. Deux enseignements utiles : Flexport, la plus avancée techniquement, fait <b>valider ses informations de suivi par des humains</b> plutôt que de tout automatiser. Et UPS propose exactement notre modèle de groupage : on regroupe à l’origine, on dédouane l’ensemble d’un coup, puis on sépare et on livre à plusieurs adresses.</p>
 
-      <h3 class="cs-h4" style="margin-top:48px">Les choix de modèle</h3>
+      <h3 class="cs-h4">Les choix de modèle</h3>
       <div class="pf-cols">
         <div><h4>Un seul parcours, trois portes d’entrée</h4><p>Plutôt que trois workflows séparés, un workflow unique avec trois façons d’y entrer : offre validée (Fret), rattachement à un départ (Groupage), import de fichier ou saisie (Express). Les modules Opération, Transport, Douane et Tri sont <b>communs aux trois services</b>.</p></div>
         <div><h4>L’agent comme point d’entrée unique du suivi</h4><p>Quand il y a un geste physique ou une décision humaine, l’agent valide. Après le départ, certaines étapes se déduisent des dates de départ et d’arrivée prévues.</p></div>
@@ -245,11 +245,11 @@
         </table>
       </div>
 
-      <h3 class="cs-h4" style="margin-top:48px">L’architecture d’information</h3>
+      <h3 class="cs-h4">L’architecture d’information</h3>
       <p class="cs-text">La navigation découle du modèle métier :</p>
       <div class="pf-nav" data-stagger><span>Dashboard</span><span>Cotation</span><span>Expéditions</span><span>Opération</span><span>Transport</span><span>Douane</span><span>Finance</span><span>Rapport</span></div>
 
-      <h3 class="cs-h4" style="margin-top:48px">Les user flows</h3>
+      <h3 class="cs-h4">Les user flows</h3>
       <p class="cs-text">Les parcours ont été tracés phase par phase avant toute maquette, avec leurs conditions et leurs points de décision — c’est là que les règles métier de la phase Définition ont été mises à l’épreuve.</p>
       <figure class="figure figure--shadow"><img src="assets/papsfret/ideation-userflows.png" alt="User flows PapsFret dans FigJam" loading="lazy"><figcaption>User flows PapsFret : chaque colonne correspond à une phase (création, groupage, opérations, douane), avec ses conditions et points de décision.</figcaption></figure>
     </section>
@@ -259,7 +259,7 @@
       <p class="cs-text">Les écrans présentés concernent le service <b>Groupage</b>, commercialisé auprès des clients sous le nom <b>Easycolis</b>. Le produit interne parle de groupage, le client parle d’Easycolis : les deux désignent la même chose.</p>
       <figure class="figure figure--shadow"><img src="assets/papsfret/proto-overview.png" alt="Vue d’ensemble du fichier Figma Groupage fret V0" loading="lazy"><figcaption>Le fichier Figma « Groupage fret – V0 » : l’ensemble des écrans du parcours, organisés par flux.</figcaption></figure>
 
-      <h3 class="cs-h4" style="margin-top:56px">A — Créer une expédition</h3>
+      <h3 class="cs-h4">A — Créer une expédition</h3>
       <p class="cs-text">Un parcours en cinq étapes, commun aux trois services : service et route, expéditeurs et destinataires, contenu, services complémentaires, validation.</p>
       <div class="pf-screens">
         <figure class="figure figure--shadow"><img src="assets/papsfret/expedition-01.png" alt="Étape 1 : choix du mode de transport, du type de service et de la route" loading="lazy"><figcaption>Étape 1 — Service &amp; route : mode de transport (aérien, maritime, routier), type de service et origine / destination.</figcaption></figure>
@@ -270,23 +270,23 @@
         <figure class="figure figure--shadow"><img src="assets/papsfret/expedition-05.png" alt="Étape 5 : validation et récapitulatif" loading="lazy"><figcaption>Étape 5 — Validation : mode, route, direction et récapitulatif chiffré des expéditions avant confirmation.</figcaption></figure>
       </div>
 
-      <h3 class="cs-h4" style="margin-top:56px">B — Créer et suivre un groupage</h3>
+      <h3 class="cs-h4">B — Créer et suivre un groupage</h3>
       <div class="pf-screens">
         <figure class="figure figure--shadow"><img src="assets/papsfret/groupage-01.png" alt="Liste des groupages avec statuts et ETA" loading="lazy"><figcaption>Liste des groupages : filtrage par mode de transport, onglets par statut (créé, consolidation, en préparation, en transit, arrivé, complété).</figcaption></figure>
         <figure class="figure figure--shadow"><img src="assets/papsfret/groupage-02.png" alt="Création d’un groupage aérien France → Sénégal avec batchs" loading="lazy"><figcaption>Création d’un groupage : l’agent glisse les expéditions dans des batchs (palettes) ; poids, volume et valeur se calculent en direct.</figcaption></figure>
       </div>
 
-      <h3 class="cs-h4" style="margin-top:56px">C — Piloter les opérations</h3>
+      <h3 class="cs-h4">C — Piloter les opérations</h3>
       <div class="pf-screens">
         <figure class="figure figure--shadow"><img src="assets/papsfret/operation-01.png" alt="Vue d’ensemble des opérations : expéditions à collecter, à recevoir, en entrepôt" loading="lazy"><figcaption>Vue d’ensemble des opérations : toutes les expéditions, quel que soit le service, avec leur route, poids et statut opérationnel.</figcaption></figure>
       </div>
 
-      <h3 class="cs-h4" style="margin-top:56px">D — Réceptionner les colis</h3>
+      <h3 class="cs-h4">D — Réceptionner les colis</h3>
       <div class="pf-screens">
         <figure class="figure figure--shadow"><img src="assets/papsfret/reception-01.png" alt="Écran de réception avec zone de scan et comparaison des poids" loading="lazy"><figcaption>Réception : scan des colis, puis comparaison entre poids attendu et poids mesuré — l’écart est affiché, car on facture au poids.</figcaption></figure>
         <figure class="figure figure--shadow"><img src="assets/papsfret/reception-02-douane.png" alt="Fiche groupage avec modification manuelle du statut douanier" loading="lazy"><figcaption>Fiche groupage : le statut douanier (export puis import) se valide manuellement, avec import du document justificatif.</figcaption></figure>
       </div>
-      <p class="cs-text" style="margin-top:34px"><b>Design system.</b> J’ai réutilisé les composants existants de Paps et j’en ai créé de nouveaux pour les besoins propres à PapsFret.</p>
+      <p class="cs-text"><b>Design system.</b> J’ai réutilisé les composants existants de Paps et j’en ai créé de nouveaux pour les besoins propres à PapsFret.</p>
     </section>
 
     <section class="reveal">
