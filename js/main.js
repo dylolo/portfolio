@@ -42,8 +42,30 @@
     sections.forEach((s) => io.observe(s));
   }
 
+  /* Grille projets : afficher les projets supplémentaires */
+  const moreBtn = document.getElementById('projects-more');
+  if (moreBtn) {
+    const extras = document.querySelectorAll('.card--extra');
+    if (!extras.length) moreBtn.parentElement.remove();
+    moreBtn.addEventListener('click', () => {
+      const expanded = moreBtn.getAttribute('aria-expanded') === 'true';
+      extras.forEach((c) => c.classList.toggle('is-collapsed', expanded));
+      moreBtn.setAttribute('aria-expanded', String(!expanded));
+      moreBtn.firstChild.textContent = expanded ? 'Voir plus de projets ' : 'Voir moins ';
+      if (window.ScrollTrigger) ScrollTrigger.refresh();
+    });
+  }
+
   if (reduceMotion || !hasGsap) return;
 
+  /* Page protégée : les animations démarrent après déverrouillage */
+  if (document.body.classList.contains('is-locked')) {
+    window.addEventListener('case:unlocked', initMotion, { once: true });
+  } else {
+    initMotion();
+  }
+
+  function initMotion() {
   gsap.registerPlugin(ScrollTrigger);
   window.addEventListener('load', () => ScrollTrigger.refresh());
 
@@ -105,5 +127,6 @@
       yPercent: 60, opacity: 0, duration: 1.4, ease: 'power4.out',
       scrollTrigger: { trigger: footerName, start: 'top 95%', once: true },
     });
+  }
   }
 })();

@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PapsFret — Étude de cas · Khady Lo</title>
+<meta name="description" content="PapsFret : plateforme B2B de gestion des opérations de fret international. UX research, modélisation métier, architecture produit et conception des parcours.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Reem+Kufi:wght@400;500;600;700&family=Sen:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .case--papsfret { --accent-cs: #1c2b5a; --accent-2: #29a9d3; --hero-bg: #e9f6fb; --hero-fg: #1c2b5a; --chip-bg: #29a9d3; }
+  .case--papsfret .case__hero-device { width: 78%; }
+  .case--papsfret .cs-h3, .case--papsfret .cs-h4 { color: var(--accent-cs); }
+  .case--papsfret .cs-h3 { border-left: 6px solid var(--accent-2); padding-left: 18px; }
+</style>
+</head>
+<body class="case case--papsfret">
+
+<header class="site-header site-header--light">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="Khady Lo — accueil">
+      <svg viewBox="0 0 41.4332 35.0043" fill="currentColor" aria-hidden="true"><path d="M5.70837 16.1443C5.70837 17.9171 5.70837 19.5391 5.70837 21.0856C5.70837 22.6321 5.70837 24.5936 5.70837 26.2155C5.70837 29.6481 5.70837 32.5902 5.70837 35.0043H0.0756076C0.113411 30.1762 0.151215 24.405 0.151215 17.6908C0.151215 10.9767 0.151215 11.6556 0.0756076 7.99677C0.0756076 5.35637 0.0378038 2.71596 0 0.0378418H5.82178C5.82178 2.82912 5.78398 5.88445 5.74618 9.16609C5.74618 11.6933 5.74618 14.032 5.74618 16.182L5.70837 16.1443Z"/><path d="M28.7312 26.5926C31.4152 29.0444 34.4773 31.8357 37.9553 35.0042H29.9787C27.7861 32.9673 25.5934 30.9681 23.4764 29.0067C18.1461 24.2163 15.1218 21.4627 14.3657 20.7837V20.6329C15.8401 19.1618 19.0156 15.8801 23.8923 10.8634C27.3324 7.31769 30.7726 3.69656 34.1749 0H41.4332C37.6528 3.62112 33.7969 7.50629 29.8275 11.5423C25.48 15.9933 22.7582 18.7846 21.6619 19.9162V20.0293C22.2289 20.5574 24.5727 22.7452 28.769 26.5549L28.7312 26.5926Z"/><path d="M14.9327 27.347C17.39 29.6102 20.1875 32.1375 23.2874 34.9665H15.3108C13.3828 33.1936 11.4926 31.4585 9.64021 29.7611C8.12806 28.4032 6.80493 27.2339 5.67082 26.1777C2.75993 23.575 1.05876 22.0285 0.491699 21.5381V21.3873C1.4746 20.4065 3.17577 18.6337 5.67082 16.1065C6.91834 14.824 8.39269 13.3152 10.0183 11.6178C13.7608 7.80805 17.4278 3.9606 21.0948 0H28.4665C24.4215 3.84744 20.3009 7.99665 16.0291 12.3345C11.6816 16.7854 8.95975 19.5767 7.82563 20.7083V20.8215C8.39269 21.3495 10.7365 23.5373 14.9327 27.347Z"/></svg>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html#philosophie">Philosophie &amp; Valeurs</a>
+      <a href="index.html#projets">Projets</a>
+      <a href="index.html#competences">Compétences</a>
+    </nav>
+    <a class="btn-contact" href="mailto:khadylo474@gmail.com">Contact</a>
+    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<!-- Accès protégé : le contenu ci-dessous n'est affiché qu'après saisie du mot de passe (voir script en bas de page). -->
+<div class="gate" id="gate">
+  <form class="gate__card" id="gate-form" autocomplete="off">
+    <img class="gate__logo" src="assets/papsfret/logo.svg" alt="PapsFret" width="180" height="47">
+    <p class="gate__eyebrow">Étude de cas confidentielle</p>
+    <h1 class="gate__title">Cette étude de cas est protégée</h1>
+    <p class="gate__text">PapsFret est un produit en cours de développement. Saisissez le mot de passe que Khady vous a transmis pour accéder au contenu.</p>
+    <label class="gate__label" for="gate-input">Mot de passe</label>
+    <div class="gate__field">
+      <input class="gate__input" id="gate-input" type="password" required placeholder="••••••••" aria-describedby="gate-error">
+      <button class="gate__btn" type="submit">Accéder</button>
+    </div>
+    <p class="gate__error" id="gate-error" role="alert" hidden>Mot de passe incorrect. Réessayez ou <a href="mailto:khadylo474@gmail.com?subject=Acc%C3%A8s%20%C3%A9tude%20de%20cas%20PapsFret">demandez l’accès</a>.</p>
+    <a class="gate__back" href="index.html#projets">← Retour aux projets</a>
+  </form>
+</div>
+
+<main id="case-content" hidden>
+  <div class="case-header-space"></div>
+
+  <div class="container">
+    <div class="case__meta">
+      <div>
+        <p class="case__meta-label case__meta-label--lg">Projet</p>
+        <h1 class="case__title">PapsFret — Plateforme B2B de gestion du fret international</h1>
+      </div>
+      <div class="case__facts">
+        <div class="case__fact"><p class="case__meta-label">Client</p><p>Paps Logistics</p></div>
+        <div class="case__fact"><p class="case__meta-label">Mon rôle</p><p>Product Designer · UX Research</p></div>
+        <div class="case__fact"><p class="case__meta-label">Durée</p><p>6 mois · en développement</p></div>
+      </div>
+    </div>
+
+    <div class="case__hero">
+      <div class="case__hero-card">
+        <div class="case__hero-head">
+          <img class="case__hero-logo case__hero-logo--wide" src="assets/papsfret/logo.svg" alt="Logo PapsFret" width="240" height="62">
+          <p class="case__hero-title">Piloter une chaîne de fret de bout en bout</p>
+          <div class="chips"><span class="chip">UX Research</span><span class="chip">Service blueprint</span><span class="chip">Product design</span></div>
+        </div>
+        <div class="case__hero-device case__hero-device--frame"><img src="assets/papsfret/operation-01.png" alt="Vue d’ensemble des opérations dans PapsFret" width="1800" height="1280"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content case__body">
+
+    <section class="reveal">
+      <h2 class="cs-h3">01 - Contexte</h2>
+      <p class="cs-text">Paps est une entreprise de logistique présente au Sénégal, au Bénin, en Côte d’Ivoire et au Cap-Vert. Jusqu’ici, Paps livrait surtout à l’intérieur d’un pays, avec son outil interne PapsOps. Puis l’entreprise s’est mise à transporter des marchandises <b>entre pays</b> : de la France ou de la Chine vers le Sénégal. Aucun outil n’existait pour ça.</p>
+
+      <h3 class="cs-h4" style="margin-top:40px">Le trajet d’une marchandise, en résumé</h3>
+      <ol class="pf-flow" data-stagger>
+        <li>Demande client</li><li>Offre</li><li>Documents</li><li>Récupération</li><li>Douane départ</li><li>Avion · bateau · camion</li><li>Arrivée à Dakar</li><li>Douane arrivée</li><li>Tri des colis</li><li>Livraison</li>
+      </ol>
+      <p class="cs-text" style="margin-top:28px">Une dizaine d’étapes. Des acteurs qu’on ne contrôle pas : compagnies aériennes, douane, partenaires, transitaires. <b>PapsFret est la plateforme que les agents utilisent pour piloter cette chaîne.</b></p>
+
+      <h3 class="cs-h4" style="margin-top:48px">Trois services, une seule chaîne</h3>
+      <div class="table-wrap">
+        <table class="audit-table pf-table">
+          <thead><tr><th></th><th>Fret</th><th>Groupage <i>(Easycolis)</i></th><th>Express</th></tr></thead>
+          <tbody>
+            <tr><td>Pour qui</td><td>Un client, une marchandise</td><td>Plusieurs clients sur un même départ</td><td>Envois urgents, souvent via UPS ou une plateforme e-commerce</td></tr>
+            <tr><td>Comment ça entre dans l’outil</td><td>Après validation d’une offre</td><td>L’agent crée le départ, les expéditions s’y rattachent</td><td>Import d’un fichier partenaire, ou saisie par l’agent</td></tr>
+            <tr><td>L’offre</td><td>Calculée au cas par cas</td><td>Au poids et au volume, selon la route</td><td>Fixée par le partenaire ; Paps intervient surtout sur la douane</td></tr>
+            <tr><td>En entrepôt</td><td>Manutention</td><td>Colis regroupés sur palette, puis séparés à l’arrivée</td><td>Manutention, puis tri</td></tr>
+            <tr><td>La promesse</td><td>Un prix et une faisabilité</td><td>Un coût partagé</td><td>De la rapidité</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <blockquote class="pf-quote">« La procédure reste la même, que ce soit maritime, aérien ou routier. »<cite>— Head of Logistics</cite></blockquote>
+      <p class="cs-text">Cette phrase a orienté toute l’architecture du produit. Plutôt que de construire trois outils, j’en ai construit <b>un seul, avec trois portes d’entrée</b>.</p>
+
+      <div class="pf-schema" aria-label="Un seul parcours, trois portes d’entrée">
+        <div class="pf-schema__in">
+          <div><b>Fret</b><span>offre validée</span></div>
+          <div><b>Groupage</b><span>rattaché à un départ</span></div>
+          <div><b>Express</b><span>fichier importé</span></div>
+        </div>
+        <div class="pf-schema__arrow" aria-hidden="true"></div>
+        <div class="pf-schema__chain">
+          <span>Douane export</span><span>Manutention</span><span>Transit</span><span>Arrivée</span><span>Douane import</span><span>Tri</span>
+          <em>→ Livraison directe ou transfert vers un autre entrepôt</em>
+        </div>
+      </div>
+
+      <p class="cs-text pf-role"><b>Mon rôle</b> — Recherche utilisateur, modélisation du métier, architecture du produit, conception des parcours et des écrans.</p>
+    </section>
+
+    <section class="reveal">
+      <h2 class="cs-h3">02 - Le challenge</h2>
+      <p class="cs-text">Le vrai problème n’était pas de faire une belle interface. C’était de <b>comprendre un métier avant de le transformer en produit</b>.</p>
+      <div class="priorities pf-priorities" data-stagger>
+        <div class="priority"><b>01 — Apprendre le métier du fret</b><p>Son vocabulaire, ses acteurs, ses obligations légales.</p></div>
+        <div class="priority"><b>02 — Faire tenir trois services</b><p>Trois services différents dans un seul outil.</p></div>
+        <div class="priority"><b>03 — Poser les règles tôt</b><p>Pour ne pas avoir à tout refaire plus tard.</p></div>
+        <div class="priority"><b>04 — Tracer les frontières</b><p>Décider ce que fait PapsFret et ce que font les autres outils de Paps.</p></div>
+        <div class="priority"><b>05 — Concevoir pour l’entrepôt</b><p>Où l’agent travaille debout, les colis dans les mains.</p></div>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <h2 class="cs-h3">03 - Ma démarche</h2>
+      <p class="cs-text">J’ai suivi les cinq phases du <b>design thinking</b>.</p>
+      <div class="table-wrap">
+        <table class="audit-table">
+          <thead><tr><th>Phase</th><th>Ce qu’elle a produit</th></tr></thead>
+          <tbody>
+            <tr><td>Empathie</td><td>Entretiens, guides d’entretien, visites terrain</td></tr>
+            <tr><td>Définition</td><td>Service blueprint, modèle du métier, règles métier, cadrage du problème</td></tr>
+            <tr><td>Idéation</td><td>Benchmark, architecture d’information, user flows</td></tr>
+            <tr><td>Prototypage</td><td>Parcours et interfaces du service Groupage</td></tr>
+            <tr><td>Test</td><td>Tests avec les agents, itérations courtes</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <h2 class="cs-h3">3.1 - Empathie</h2>
+      <h3 class="cs-h4">Comprendre un métier que je ne connaissais pas</h3>
+      <p class="cs-text"><b>Pourquoi.</b> Le fret ne s’invente pas. Si on saute cette étape, on conçoit le métier tel qu’on l’imagine, pas tel qu’il se pratique. La difficulté n’était pas de trouver des gens à interroger. C’était que <b>chacun ne voit qu’un morceau de la chaîne</b>. Sans méthode, on récolte des récits qui ne se recoupent pas.</p>
+
+      <h3 class="cs-h4" style="margin-top:40px">5 entretiens, un par maillon de la chaîne</h3>
+      <div class="table-wrap">
+        <table class="audit-table">
+          <thead><tr><th>Profil</th><th>Ce qu’il m’a apporté</th></tr></thead>
+          <tbody>
+            <tr><td>Head of Logistics</td><td>La vue d’ensemble, du devis à la livraison</td></tr>
+            <tr><td>Chargé du fret</td><td>Le service le plus complexe, au cas par cas</td></tr>
+            <tr><td>Chargé du groupage</td><td>Le regroupement et les opérations d’entrepôt</td></tr>
+            <tr><td>Chargé de l’express</td><td>L’entrée des expéditions par fichier partenaire</td></tr>
+            <tr><td>Chargé de douane</td><td>Les obligations légales et les documents</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="pf-cols">
+        <div><h4>Des guides d’entretien préparés à l’avance</h4><p>Un guide par profil. Les mêmes thèmes revenaient à chaque fois : les étapes, les acteurs, les informations nécessaires, les documents, les règles. Chacun développait ensuite son propre domaine. C’est ce qui m’a permis de <b>recoller les morceaux</b> et d’obtenir une vue complète de la chaîne.</p></div>
+        <div><h4>Observation sur le terrain</h4><p>Visite de la zone cargo de l’aéroport AIBD, entrepôt, chargement, remise documentaire. Pour voir ce que les entretiens ne disent pas : les gestes, les contraintes physiques, les contournements.</p></div>
+        <div><h4>Une restitution aux équipes</h4><p>J’ai rejoué mes constats devant les opérations avant de modéliser quoi que ce soit. Première vérification que j’avais bien compris.</p></div>
+      </div>
+
+      <h3 class="cs-h4" style="margin-top:56px">Les phrases qui ont décidé de la conception</h3>
+      <div class="pf-insights" data-stagger>
+        <div class="pf-insight"><blockquote>« Il faut la nature de la marchandise, il faut le poids, il faut les dimensions, il faut la valeur. C’est un impératif pour nous permettre de faire une offre. »</blockquote><p>→ Ces quatre champs sont obligatoires dans le parcours de création.</p></div>
+        <div class="pf-insight"><blockquote>« Il y a des documents qui sont obligatoires en fonction de la nature de la marchandise. »</blockquote><p>→ Le formulaire ne peut pas être le même pour tous les colis.</p></div>
+        <div class="pf-insight"><blockquote>« Tout colis qui quitte un pays A vers un pays B doit faire l’objet d’une déclaration d’export, et le pays de destination doit faire une déclaration d’import. »</blockquote><p>→ Deux statuts de douane distincts dans le suivi.</p></div>
+      </div>
+
+      <h3 class="cs-h4" style="margin-top:56px">Ce que seule l’observation a révélé</h3>
+      <p class="cs-text">Les entretiens décrivent le processus. L’observation montre les conditions dans lesquelles il se déroule.</p>
+      <div class="table-wrap">
+        <table class="audit-table">
+          <thead><tr><th>Observation</th><th>Décision produit</th></tr></thead>
+          <tbody>
+            <tr><td>La majorité des opérations se passent hors du bureau : réception des groupages, passages en douane, transfert des colis vers l’entrepôt. Les agents n’ont pas leur ordinateur avec eux.</td><td>Le design doit être pensé mobile-friendly.</td></tr>
+            <tr><td>Le poids annoncé par le client est rarement le vrai poids. Or on facture au poids.</td><td>L’écran de réception compare les deux et affiche la différence.</td></tr>
+            <tr><td>Les documents papier circulent en parallèle de l’outil.</td><td>Les documents deviennent un élément central de la fiche expédition.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="pf-gallery">
+        <figure class="figure figure--shadow pf-gallery__wide"><img src="assets/papsfret/terrain-01.png" alt="Guide d’entretien pour le service Fret : objectif, profil interrogé, durée, déroulé" loading="lazy"><figcaption>Guide d’entretien semi-directif préparé pour le Head of Logistics (60 min) : contexte, processus global, frictions et attentes.</figcaption></figure>
+        <figure class="figure figure--shadow"><img src="assets/papsfret/terrain-02-palette.png" alt="Palette de colis filmée en zone cargo" loading="lazy"><figcaption>Zone cargo de l’aéroport AIBD : une palette de groupage filmée, prête au départ.</figcaption></figure>
+        <figure class="figure figure--shadow"><img src="assets/papsfret/terrain-03-racks.png" alt="Racks de stockage dans l’entrepôt" loading="lazy"><figcaption>L’entrepôt : les colis sont stockés sur racks, l’agent travaille debout, sans ordinateur à portée.</figcaption></figure>
+        <figure class="figure figure--shadow"><img src="assets/papsfret/terrain-04.png" alt="Agents vérifiant des colis devant un camion et un conteneur" loading="lazy"><figcaption>Remise documentaire et contrôle des colis au chargement : le papier circule en parallèle de l’outil.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <h2 class="cs-h3">3.2 - Définition</h2>
+      <h3 class="cs-h4">Cadrer le problème et modéliser le métier</h3>
+      <p class="cs-text">Sur un produit complexe, les allers-retours ne viennent pas de l’UI. Ils viennent de <b>règles métier découvertes trop tard</b>. Chaque règle qui remonte après la maquette coûte un cycle complet : écran, spec, développement, recette. C’est la phase que je défends le plus, et celle que beaucoup de projets sautent.</p>
+      <blockquote class="pf-quote pf-quote--question">Comment permettre à un agent de piloter une chaîne d’une dizaine d’étapes, avec des acteurs externes et des obligations légales, sans qu’il ait à retenir toutes les règles par cœur ?</blockquote>
+      <h3 class="cs-h4" style="margin-top:48px">Ce que j’ai produit</h3>
+      <div class="pf-cols">
+        <div><h4>Une cartographie du processus</h4><p>Du premier contact client jusqu’au paiement.</p></div>
+        <div><h4>Un service blueprint</h4><p>Fret / Maritime / Routier — quatre couches en regard : actions utilisateur, back-office, systèmes et tiers, règles métier. Il a fait remonter des règles que personne n’avait formulées parce qu’elles paraissaient évidentes.</p></div>
+        <div><h4>Un business domain model</h4><p>Client, Demande de transport, Devis, Expédition, Groupage, Batch, Partenaire, Réservation, Documents, Douane, Livraison, Historique des événements.</p></div>
+      </div>
+      <figure class="figure figure--shadow"><img src="assets/papsfret/definition-blueprint.png" alt="Service blueprint Fret / Maritime / Routier dans FigJam" loading="lazy"><figcaption>Service blueprint Fret / Maritime / Routier : les quatre couches (utilisateur, back-office, systèmes &amp; tiers, règles métier) alignées étape par étape.</figcaption></figure>
+    </section>
+
+    <section class="reveal">
+      <h2 class="cs-h3">3.3 - Idéation</h2>
+      <p class="cs-text">Le métier une fois modélisé, plusieurs produits différents restaient possibles. L’idéation a servi à trancher entre des <b>modèles</b>.</p>
+      <h3 class="cs-h4" style="margin-top:40px">Benchmark</h3>
+      <p class="cs-text">J’ai étudié Flexport, DHL, UPS et Speedaf pour voir comment ces plateformes résolvent le même problème structurel : suivre une marchandise dont on ne contrôle pas tous les acteurs. Deux enseignements utiles : Flexport, la plus avancée techniquement, fait <b>valider ses informations de suivi par des humains</b> plutôt que de tout automatiser. Et UPS propose exactement notre modèle de groupage : on regroupe à l’origine, on dédouane l’ensemble d’un coup, puis on sépare et on livre à plusieurs adresses.</p>
+
+      <h3 class="cs-h4" style="margin-top:48px">Les choix de modèle</h3>
+      <div class="pf-cols">
+        <div><h4>Un seul parcours, trois portes d’entrée</h4><p>Plutôt que trois workflows séparés, un workflow unique avec trois façons d’y entrer : offre validée (Fret), rattachement à un départ (Groupage), import de fichier ou saisie (Express). Les modules Opération, Transport, Douane et Tri sont <b>communs aux trois services</b>.</p></div>
+        <div><h4>L’agent comme point d’entrée unique du suivi</h4><p>Quand il y a un geste physique ou une décision humaine, l’agent valide. Après le départ, certaines étapes se déduisent des dates de départ et d’arrivée prévues.</p></div>
+        <div><h4>Des frontières claires entre produits</h4><p>Un outil à apprendre pour les agents, un parcours à construire pour les développeurs.</p></div>
+      </div>
+      <div class="table-wrap">
+        <table class="audit-table">
+          <thead><tr><th>Produit</th><th>Responsabilité</th></tr></thead>
+          <tbody>
+            <tr><td>MyPaps</td><td>Le client réserve et suit son envoi</td></tr>
+            <tr><td>PapsRéglage</td><td>Les paramètres : routes, pays, transporteurs, partenaires, tarifs, douane</td></tr>
+            <tr><td>PapsFret</td><td>Les opérations internationales, jusqu’au tri des colis</td></tr>
+            <tr><td>PapsOps</td><td>La livraison finale et les transferts entre entrepôts</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="cs-h4" style="margin-top:48px">L’architecture d’information</h3>
+      <p class="cs-text">La navigation découle du modèle métier :</p>
+      <div class="pf-nav" data-stagger><span>Dashboard</span><span>Cotation</span><span>Expéditions</span><span>Opération</span><span>Transport</span><span>Douane</span><span>Finance</span><span>Rapport</span></div>
+
+      <h3 class="cs-h4" style="margin-top:48px">Les user flows</h3>
+      <p class="cs-text">Les parcours ont été tracés phase par phase avant toute maquette, avec leurs conditions et leurs points de décision — c’est là que les règles métier de la phase Définition ont été mises à l’épreuve.</p>
+      <figure class="figure figure--shadow"><img src="assets/papsfret/ideation-userflows.png" alt="User flows PapsFret dans FigJam" loading="lazy"><figcaption>User flows PapsFret : chaque colonne correspond à une phase (création, groupage, opérations, douane), avec ses conditions et points de décision.</figcaption></figure>
+    </section>
+
+    <section class="reveal">
+      <h2 class="cs-h3">3.4 - Prototypage</h2>
+      <p class="cs-text">Les écrans présentés concernent le service <b>Groupage</b>, commercialisé auprès des clients sous le nom <b>Easycolis</b>. Le produit interne parle de groupage, le client parle d’Easycolis : les deux désignent la même chose.</p>
+      <figure class="figure figure--shadow"><img src="assets/papsfret/proto-overview.png" alt="Vue d’ensemble du fichier Figma Groupage fret V0" loading="lazy"><figcaption>Le fichier Figma « Groupage fret – V0 » : l’ensemble des écrans du parcours, organisés par flux.</figcaption></figure>
+
+      <h3 class="cs-h4" style="margin-top:56px">A — Créer une expédition</h3>
+      <p class="cs-text">Un parcours en cinq étapes, commun aux trois services : service et route, expéditeurs et destinataires, contenu, services complémentaires, validation.</p>
+      <div class="pf-screens">
+        <figure class="figure figure--shadow"><img src="assets/papsfret/expedition-01.png" alt="Étape 1 : choix du mode de transport, du type de service et de la route" loading="lazy"><figcaption>Étape 1 — Service &amp; route : mode de transport (aérien, maritime, routier), type de service et origine / destination.</figcaption></figure>
+        <figure class="figure figure--shadow"><img src="assets/papsfret/expedition-02.png" alt="Étape 2 : liste des expéditeurs et destinataires" loading="lazy"><figcaption>Étape 2 — Expéditeurs &amp; destinataires : chaque expédition relie un expéditeur à un destinataire distinct.</figcaption></figure>
+        <figure class="figure figure--shadow"><img src="assets/papsfret/expedition-03.png" alt="Étape 3 : saisie du contenu d’un colis" loading="lazy"><figcaption>Étape 3 — Contenu : nature, poids, dimensions et valeur déclarée, les quatre champs obligatoires issus des entretiens.</figcaption></figure>
+        <figure class="figure figure--shadow"><img src="assets/papsfret/expedition-04.png" alt="Étape 3 : récapitulatif des colis par expédition" loading="lazy"><figcaption>Étape 3 — Les colis renseignés se replient en lignes de synthèse ; l’état « colis à renseigner » guide l’agent.</figcaption></figure>
+        <figure class="figure figure--shadow"><img src="assets/papsfret/expedition-06.png" alt="Étape 4 : services complémentaires" loading="lazy"><figcaption>Étape 4 — Services complémentaires : collecte à domicile et livraison finale, au choix par expédition.</figcaption></figure>
+        <figure class="figure figure--shadow"><img src="assets/papsfret/expedition-05.png" alt="Étape 5 : validation et récapitulatif" loading="lazy"><figcaption>Étape 5 — Validation : mode, route, direction et récapitulatif chiffré des expéditions avant confirmation.</figcaption></figure>
+      </div>
+
+      <h3 class="cs-h4" style="margin-top:56px">B — Créer et suivre un groupage</h3>
+      <div class="pf-screens">
+        <figure class="figure figure--shadow"><img src="assets/papsfret/groupage-01.png" alt="Liste des groupages avec statuts et ETA" loading="lazy"><figcaption>Liste des groupages : filtrage par mode de transport, onglets par statut (créé, consolidation, en préparation, en transit, arrivé, complété).</figcaption></figure>
+        <figure class="figure figure--shadow"><img src="assets/papsfret/groupage-02.png" alt="Création d’un groupage aérien France → Sénégal avec batchs" loading="lazy"><figcaption>Création d’un groupage : l’agent glisse les expéditions dans des batchs (palettes) ; poids, volume et valeur se calculent en direct.</figcaption></figure>
+      </div>
+
+      <h3 class="cs-h4" style="margin-top:56px">C — Piloter les opérations</h3>
+      <div class="pf-screens">
+        <figure class="figure figure--shadow"><img src="assets/papsfret/operation-01.png" alt="Vue d’ensemble des opérations : expéditions à collecter, à recevoir, en entrepôt" loading="lazy"><figcaption>Vue d’ensemble des opérations : toutes les expéditions, quel que soit le service, avec leur route, poids et statut opérationnel.</figcaption></figure>
+      </div>
+
+      <h3 class="cs-h4" style="margin-top:56px">D — Réceptionner les colis</h3>
+      <div class="pf-screens">
+        <figure class="figure figure--shadow"><img src="assets/papsfret/reception-01.png" alt="Écran de réception avec zone de scan et comparaison des poids" loading="lazy"><figcaption>Réception : scan des colis, puis comparaison entre poids attendu et poids mesuré — l’écart est affiché, car on facture au poids.</figcaption></figure>
+        <figure class="figure figure--shadow"><img src="assets/papsfret/reception-02-douane.png" alt="Fiche groupage avec modification manuelle du statut douanier" loading="lazy"><figcaption>Fiche groupage : le statut douanier (export puis import) se valide manuellement, avec import du document justificatif.</figcaption></figure>
+      </div>
+      <p class="cs-text" style="margin-top:34px"><b>Design system.</b> J’ai réutilisé les composants existants de Paps et j’en ai créé de nouveaux pour les besoins propres à PapsFret.</p>
+    </section>
+
+    <section class="reveal">
+      <h2 class="cs-h3">3.5 - Test</h2>
+      <h3 class="cs-h4">Confronter les écrans au réel</h3>
+      <div class="pf-cols">
+        <div><h4>Revues avec les équipes métier</h4><p>Pendant la modélisation. Le service blueprint et le modèle des objets ont servi de support. Plusieurs règles ont été corrigées à ce moment-là.</p></div>
+        <div><h4>Vérifications de faisabilité</h4><p>Avec le Head of Tech et les développeurs sur les modèles retenus.</p></div>
+        <div><h4>Tests d’utilisabilité avec les agents</h4><p>Une fois les premiers écrans livrés : les agents ont testé les parcours, donné leurs retours, et nous avons enchaîné des <b>itérations courtes</b>. C’est le moment où le produit a cessé d’être une hypothèse.</p></div>
+      </div>
+      <div class="pf-status"><b>Où en est le projet</b><p>PapsFret est <b>en cours de développement</b>. Les écrans sont livrés par lots, testés avec les agents, puis ajustés. La conception continue d’avancer en parallèle sur les services qui ne sont pas encore couverts.</p></div>
+    </section>
+
+    <section class="reveal">
+      <h2 class="cs-h3">04 - Une démarche collaborative</h2>
+      <p class="cs-text">Les décisions présentées dans cette étude de cas sont le résultat d’un travail collaboratif entre le Product Manager, le Product Owner, le Head of Tech et moi-même en tant que Product Designer. Mon rôle a principalement consisté à <b>comprendre et formaliser les besoins métier, mener la recherche, structurer les parcours et traduire les contraintes métier et techniques en solutions de conception</b>. Certaines orientations produit, règles métier et décisions techniques ont été définies collectivement avec les parties prenantes.</p>
+    </section>
+
+    <section class="reveal">
+      <h2 class="cs-h3">05 - Ce que j’en retiens</h2>
+      <div class="priorities pf-priorities" data-stagger>
+        <div class="priority"><b>Les règles du métier se paient tôt ou tard.</b><p>Cherchées au début, elles coûtent des questions. Découvertes à la fin, elles coûtent des écrans et du développement.</p></div>
+        <div class="priority"><b>Une phrase d’expert peut valoir une décision d’architecture.</b><p>« La procédure reste la même » a évité de construire trois outils là où un seul suffisait.</p></div>
+        <div class="priority"><b>Le terrain n’est pas une formalité.</b><p>Les écrans de réception et de tri ne ressembleraient pas à ça sans les visites en zone cargo.</p></div>
+        <div class="priority"><b>Bien nommer les choses, c’est déjà concevoir.</b><p>Séparer groupage et batch, statut et événement, a eu plus d’effet sur le produit que n’importe quel choix visuel.</p></div>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <h2 class="cs-h3">06 - Ce que ce projet démontre</h2>
+      <div class="pf-tags" data-stagger>
+        <span>UX Research</span><span>Product Discovery</span><span>Business Process Mapping</span><span>Service Blueprint</span><span>Modélisation métier</span><span>Architecture de l’information</span><span>User Flows</span><span>Interaction Design</span><span>UX/UI Design</span><span>Design System</span><span>Product Thinking</span><span>Produits B2B complexes</span>
+      </div>
+    </section>
+  </div>
+
+  <section class="container more">
+    <h2 class="more__title reveal">Plus de projets</h2>
+    <div class="more__grid" data-stagger>
+      <a class="card card--btc" href="projet-btc-change.html" aria-label="BTC Change — plateforme de gestion de change">
+        <img class="card__logo" src="assets/btc/logo-btc.png" alt="">
+        <p class="card__title">BTC Change</p>
+        <div class="card__media"><img src="assets/btc/hero-imac.png" alt=""></div>
+        <span class="card__cta">Voir l’étude de cas →</span>
+      </a>
+      <a class="card card--mcn" href="projet-mcn.html" aria-label="Website MCN — Musée des Civilisations Noires">
+        <img class="card__logo card__logo--sm" src="assets/mcn/logo-mcn.png" alt="">
+        <p class="card__title">Website MCN</p>
+        <div class="card__media"><img src="assets/mcn/hero-site.png" alt=""></div>
+        <span class="card__cta">Voir l’étude de cas →</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="site-footer" hidden>
+  <p class="site-footer__name">Khady Lo</p>
+  <div class="site-footer__links">
+    <a href="https://www.linkedin.com/in/khady-lo-b90313228/" target="_blank" rel="noopener">Linkedin</a>
+    <a href="https://dribbble.com/khadylo" target="_blank" rel="noopener">Dribbble</a>
+    <a href="mailto:khadylo474@gmail.com">Email</a>
+  </div>
+  <p class="site-footer__meta">© 2026 Khady Lo — Product Designer, Dakar</p>
+</footer>
+
+<button class="to-top" type="button" aria-label="Revenir en haut"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 15.8V4.2"/><path d="M4.2 10 10 4.2 15.8 10"/></svg></button>
+
+<script>
+  // Mot de passe : seul son empreinte SHA-256 est stockée ici. Pour en changer, remplacer GATE_HASH
+  // par l'empreinte du nouveau mot de passe (voir README.md, section « Accès protégé »).
+  const GATE_HASH = '5449d853eb3ce7c7ca852eca01ecbef2a4c3856af26a0fa79940e7255c908698';
+  (async () => {
+    const gate = document.getElementById('gate');
+    const form = document.getElementById('gate-form');
+    const input = document.getElementById('gate-input');
+    const error = document.getElementById('gate-error');
+    const sha = async (s) => [...new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s)))].map(b => b.toString(16).padStart(2, '0')).join('');
+    const unlock = () => {
+      sessionStorage.setItem('pf-access', '1');
+      gate.remove();
+      document.getElementById('case-content').hidden = false;
+      document.getElementById('site-footer').hidden = false;
+      document.body.classList.remove('is-locked');
+      window.dispatchEvent(new Event('case:unlocked'));
+      if (window.ScrollTrigger) ScrollTrigger.refresh();
+    };
+    const fromUrl = new URLSearchParams(location.search).get('acces');
+    if (sessionStorage.getItem('pf-access') === '1' || (fromUrl && await sha(fromUrl.trim()) === GATE_HASH)) { unlock(); return; }
+    document.body.classList.add('is-locked');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (await sha(input.value.trim()) === GATE_HASH) { unlock(); return; }
+      error.hidden = false; input.value = ''; input.focus();
+      form.classList.remove('is-shaking'); void form.offsetWidth; form.classList.add('is-shaking');
+    });
+  })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
